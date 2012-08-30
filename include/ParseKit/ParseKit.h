@@ -64,10 +64,8 @@
 #import <ParseKit/PKDelimitState.h>
 #import <ParseKit/PKURLState.h>
 #import <ParseKit/PKEmailState.h>
-#if PLATFORM(TWITTER_STATE)
 #import <ParseKit/PKTwitterState.h>
 #import <ParseKit/PKHashtagState.h>
-#endif
 #import <ParseKit/PKCommentState.h>
 #import <ParseKit/PKSingleLineCommentState.h>
 #import <ParseKit/PKMultiLineCommentState.h>

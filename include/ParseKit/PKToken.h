@@ -39,10 +39,8 @@ typedef enum {
     PKTokenTypeAny,
     PKTokenTypeURL,
     PKTokenTypeEmail,
-#if PLATFORM(TWITTER_STATE)
     PKTokenTypeTwitter,
     PKTokenTypeHashtag,
-#endif
 } PKTokenType;
 
 /*!
@@ -64,10 +62,8 @@ typedef enum {
     BOOL delimitedString;
     BOOL URL;
     BOOL email;
-#if PLATFORM(TWITTER_STATE)
     BOOL twitter;
     BOOL hashtag;
-#endif
     
     id value;
     NSUInteger offset;
@@ -165,7 +161,7 @@ typedef enum {
 */
 @property (nonatomic, readonly, getter=isEmail) BOOL email;
 
-#if PLATFORM(TWITTER_STATE)
+
 /*!
     @property   twitter
     @brief      True if this token is an twitter handle. getter=isTwitter
@@ -177,7 +173,7 @@ typedef enum {
     @brief      True if this token is an twitter hashtag. getter=isHashtag
 */
 @property (nonatomic, readonly, getter=isHashtag) BOOL hashtag;
-#endif
+
 
 /*!
     @property   tokenType
