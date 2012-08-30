@@ -58,25 +58,25 @@
         self.wordState       = [[[PKWordState alloc] init] autorelease];
         self.delimitState    = [[[PKDelimitState alloc] init] autorelease];
         self.URLState        = [[[PKURLState alloc] init] autorelease];
-#if PLATFORM(EMAIL_STATE)
+
         self.emailState      = [[[PKEmailState alloc] init] autorelease];
-#endif
+
         numberState.fallbackState = symbolState;
         quoteState.fallbackState = symbolState;
-#if PLATFORM(EMAIL_STATE)
+
         URLState.fallbackState = emailState;
         emailState.fallbackState = wordState;
-#else
+
         URLState.fallbackState = wordState;
-#endif
+
         
-#if PLATFORM(TWITTER_STATE)
+
         self.twitterState    = [[[PKTwitterState alloc] init] autorelease];
         twitterState.fallbackState = symbolState;
 
         self.hashtagState    = [[[PKHashtagState alloc] init] autorelease];
         hashtagState.fallbackState = symbolState;
-#endif
+
 
         self.tokenizerStates = [NSMutableArray arrayWithCapacity:STATE_COUNT];
         
@@ -124,13 +124,13 @@
     self.wordState = nil;
     self.delimitState = nil;
     self.URLState = nil;
-#if PLATFORM(EMAIL_STATE)
+
     self.emailState = nil;
-#endif
-#if PLATFORM(TWITTER_STATE)
+
+
     self.twitterState = nil;
     self.hashtagState = nil;
-#endif
+
     [super dealloc];
 }
 
@@ -217,11 +217,7 @@
     } else if (c == '"') {               // From: 34 to: 34    From:0x22 to:0x22
         return quoteState;
     } else if (c == '#') {               // From: 35 to: 35    From:0x23 to:0x23
-#if PLATFORM(TWITTER_STATE)
         return hashtagState;
-#else
-        return symbolState;
-#endif
     } else if (c >= 36 && c <= 38) {
         return symbolState;
     } else if (c == '\'') {              // From: 39 to: 39    From:0x27 to:0x27
@@ -242,12 +238,6 @@
         return numberState;
     } else if (c >= 58 && c <= 63) {
         return symbolState;
-    } else if (c == '@') {               // From: 64 to: 64    From:0x40 to:0x40
-#if PLATFORM(TWITTER_STATE)
-        return twitterState;
-#else
-        return symbolState;
-#endif
     } else if (c >= 'A' && c <= 'Z') {   // From: 65 to: 90    From:0x41 to:0x5A
         return URLState;
     } else if (c >= 91 && c <= 96) {
@@ -287,13 +277,9 @@
 @synthesize wordState;
 @synthesize delimitState;
 @synthesize URLState;
-#if PLATFORM(EMAIL_STATE)
 @synthesize emailState;
-#endif
-#if PLATFORM(TWITTER_STATE)
 @synthesize twitterState;
 @synthesize hashtagState;
-#endif
 @synthesize string;
 @synthesize reader;
 @synthesize tokenizerStates;

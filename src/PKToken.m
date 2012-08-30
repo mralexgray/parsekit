@@ -62,10 +62,8 @@ static PKTokenEOF *EOFToken = nil;
 @property (nonatomic, readwrite, getter=isDelimitedString) BOOL delimitedString;
 @property (nonatomic, readwrite, getter=isURL) BOOL URL;
 @property (nonatomic, readwrite, getter=isEmail) BOOL email;
-#if PLATFORM(TWITTER_STATE)
 @property (nonatomic, readwrite, getter=isTwitter) BOOL twitter;
 @property (nonatomic, readwrite, getter=isHashtag) BOOL hashtag;
-#endif
 
 @property (nonatomic, readwrite) PKFloat floatValue;
 @property (nonatomic, readwrite, copy) NSString *stringValue;
@@ -104,10 +102,8 @@ static PKTokenEOF *EOFToken = nil;
         self.delimitedString = (PKTokenTypeDelimitedString == t);
         self.URL = (PKTokenTypeURL == t);
         self.email = (PKTokenTypeEmail == t);
-#if PLATFORM(TWITTER_STATE)
         self.twitter = (PKTokenTypeTwitter == t);
         self.hashtag = (PKTokenTypeHashtag == t);
-#endif
     }
     return self;
 }
@@ -201,12 +197,10 @@ static PKTokenEOF *EOFToken = nil;
         typeString = @"URL";
     } else if (self.isEmail) {
         typeString = @"Email";
-#if PLATFORM(TWITTER_STATE)
     } else if (self.isTwitter) {
         typeString = @"Twitter";
     } else if (self.isHashtag) {
         typeString = @"Hashtag";
-#endif
     }
     return [NSString stringWithFormat:@"<%@ %C%@%C>", typeString, (unichar)0x00AB, self.value, (unichar)0x00BB];
 }
@@ -225,10 +219,8 @@ static PKTokenEOF *EOFToken = nil;
 @synthesize delimitedString;
 @synthesize URL;
 @synthesize email;
-#if PLATFORM(TWITTER_STATE)
 @synthesize twitter;
 @synthesize hashtag;
-#endif
 @synthesize floatValue;
 @synthesize stringValue;
 @synthesize tokenType;

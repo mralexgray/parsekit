@@ -5,8 +5,6 @@
 //  Created by Todd Ditchendorf on 4/1/10.
 //  Copyright 2010 Todd Ditchendorf. All rights reserved.
 //
-
-#if PLATFORM(TWITTER_STATE)
 #import <ParseKit/PKTwitterState.h>
 #import <ParseKit/PKReader.h>
 #import <ParseKit/PKTokenizer.h>
@@ -74,4 +72,4 @@
 }
 
 @end
-#endif
+
