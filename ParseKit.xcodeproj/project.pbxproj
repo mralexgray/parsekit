@@ -8,40 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
-		D302C69D0EF044810090E714 /* TDPlistParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D36568A60EEF9FE900226554 /* TDPlistParser.m */; };
 		D30805BA155ECB1F0000BC60 /* PKPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAF380FF9E18300D7773A /* PKPattern.m */; };
 		D30805BB155ECB220000BC60 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = D36C55FD0FD3617B00141CB7 /* RegexKitLite.m */; };
 		D30805BC155ECB3F0000BC60 /* PKPattern.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221F00FFE8C7A004514FE /* PKPattern.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3126D060FFD9BA700CBF4C4 /* PKNegation.m in Sources */ = {isa = PBXBuildFile; fileRef = D3126D040FFD9BA700CBF4C4 /* PKNegation.m */; };
-		D3126DEC0FFDBC1D00CBF4C4 /* PKNegation.m in Sources */ = {isa = PBXBuildFile; fileRef = D3126D040FFD9BA700CBF4C4 /* PKNegation.m */; };
-		D315DF730FEF59B600D876C8 /* date.grammar in Resources */ = {isa = PBXBuildFile; fileRef = D315DF710FEF59B600D876C8 /* date.grammar */; };
-		D319E42B106D8A1F008C63DD /* arithmetic.grammar in Resources */ = {isa = PBXBuildFile; fileRef = D319E429106D8A1F008C63DD /* arithmetic.grammar */; };
-		D319E42F106D8A31008C63DD /* TDArithmeticAssembler.m in Sources */ = {isa = PBXBuildFile; fileRef = D319E42D106D8A31008C63DD /* TDArithmeticAssembler.m */; };
-		D31A15270F6DE449002AFDF1 /* javascript.grammar in Resources */ = {isa = PBXBuildFile; fileRef = D31A15250F6DE449002AFDF1 /* javascript.grammar */; };
-		D31A16530F7038C2002AFDF1 /* TDJavaScriptParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D31A16510F7038C2002AFDF1 /* TDJavaScriptParser.m */; };
 		D31EEF3315D482CA00399F70 /* ParseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* ParseKit.framework */; };
-		D31FE7300E60F31E00A0803E /* TDFastJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D31FE5A20E60E5D500A0803E /* TDFastJsonParser.m */; };
-		D31FE7320E60F33000A0803E /* EBNFParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E78A160E574C99008C7D61 /* EBNFParser.m */; };
-		D31FE7330E60F33C00A0803E /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = D3521F530E5FA1B0009681F9 /* XMLReader.m */; };
-		D31FE7340E60F34600A0803E /* XPathParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D36E95450E578ECC00496BD3 /* XPathParser.m */; };
-		D31FE7380E60F36600A0803E /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D36E9F860E5A795400496BD3 /* libxml2.dylib */; };
-		D31FE7400E60F40300A0803E /* XPathAssembler.m in Sources */ = {isa = PBXBuildFile; fileRef = D36E97AF0E589DAE00496BD3 /* XPathAssembler.m */; };
-		D31FE7420E60F40900A0803E /* XPathContext.m in Sources */ = {isa = PBXBuildFile; fileRef = D36E98210E58A3A800496BD3 /* XPathContext.m */; };
-		D3252F7E0FCE1A87005EF059 /* TDNSPredicateBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D3252F7D0FCE1A87005EF059 /* TDNSPredicateBuilder.m */; };
-		D3305C4F102F5BAE00DC4F75 /* TDGutterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3305C4C102F5BAD00DC4F75 /* TDGutterView.m */; };
-		D3305C50102F5BAE00DC4F75 /* TDSourceCodeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3305C4E102F5BAE00DC4F75 /* TDSourceCodeTextView.m */; };
-		D33494720E29670B00406085 /* ParseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* ParseKit.framework */; };
 		D3376D5910093A1600E4602E /* PKGrammarParser.h in Headers */ = {isa = PBXBuildFile; fileRef = D3376D5710093A1600E4602E /* PKGrammarParser.h */; };
 		D3376D5A10093A1600E4602E /* PKGrammarParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D3376D5810093A1600E4602E /* PKGrammarParser.m */; };
-		D3376D8F10096C0700E4602E /* PKAST.m in Sources */ = {isa = PBXBuildFile; fileRef = D3376D8D10096C0700E4602E /* PKAST.m */; };
 		D337F07E15D5AE7B00C83AED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D337F07C15D5AE7B00C83AED /* InfoPlist.strings */; };
-		D3385FDA0FCFB1FF003BF729 /* TDPredicateEvaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = D3385FD80FCFB1FF003BF729 /* TDPredicateEvaluator.m */; };
-		D33DC1991165634F004CE58C /* PKTwitterState.m in Sources */ = {isa = PBXBuildFile; fileRef = D33DC1971165634F004CE58C /* PKTwitterState.m */; };
 		D33DC19B1165634F004CE58C /* PKTwitterState.m in Sources */ = {isa = PBXBuildFile; fileRef = D33DC1971165634F004CE58C /* PKTwitterState.m */; };
-		D33DC1A011656952004CE58C /* PKTwitterState.h in Headers */ = {isa = PBXBuildFile; fileRef = D33DC19F11656952004CE58C /* PKTwitterState.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D33DC1A111656952004CE58C /* PKTwitterState.h in Headers */ = {isa = PBXBuildFile; fileRef = D33DC19F11656952004CE58C /* PKTwitterState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D341850C0E520D640081B0DC /* ParseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* ParseKit.framework */; };
-		D34BAC9A0FF8A9AD00D7773A /* xpath1_0.grammar in Resources */ = {isa = PBXBuildFile; fileRef = D3F741430EF8E96A00559B9F /* xpath1_0.grammar */; };
 		D34BAD640FF9C6AE00D7773A /* ParseKit_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = D34BAD630FF9C6AE00D7773A /* ParseKit_Prefix.pch */; };
 		D34BAD9D0FF9C95800D7773A /* PKReader.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAD9B0FF9C95800D7773A /* PKReader.m */; };
 		D34BADA20FF9C9B000D7773A /* PKAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BADA00FF9C9B000D7773A /* PKAssembly.m */; };
@@ -92,110 +68,12 @@
 		D34BAFDA0FF9E95500D7773A /* NSArray+ParseKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAFD40FF9E95500D7773A /* NSArray+ParseKitAdditions.m */; };
 		D34BAFDC0FF9E95500D7773A /* NSString+ParseKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAFD60FF9E95500D7773A /* NSString+ParseKitAdditions.m */; };
 		D34BAFDE0FF9E95500D7773A /* PKParserFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAFD80FF9E95500D7773A /* PKParserFactory.m */; };
-		D34BB0680FF9EDDF00D7773A /* JSParseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB0660FF9EDDF00D7773A /* JSParseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0690FF9EDDF00D7773A /* JSParseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB0670FF9EDDF00D7773A /* JSParseKit.m */; };
-		D34BB0710FF9EE4000D7773A /* PKJSAssembly.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB06A0FF9EE4000D7773A /* PKJSAssembly.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0720FF9EE4000D7773A /* PKJSAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB06B0FF9EE4000D7773A /* PKJSAssembly.m */; };
-		D34BB0730FF9EE4000D7773A /* PKJSUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB06C0FF9EE4000D7773A /* PKJSUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0740FF9EE4000D7773A /* PKJSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB06D0FF9EE4000D7773A /* PKJSUtils.m */; };
-		D34BB0750FF9EE4000D7773A /* PKJSUtils_macros.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB06E0FF9EE4000D7773A /* PKJSUtils_macros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0760FF9EE4000D7773A /* PKJSValueHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB06F0FF9EE4000D7773A /* PKJSValueHolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0770FF9EE4000D7773A /* PKJSValueHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB0700FF9EE4000D7773A /* PKJSValueHolder.m */; };
-		D34BB08F0FF9EF9D00D7773A /* PKJSCharacterAssembly.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB08D0FF9EF9D00D7773A /* PKJSCharacterAssembly.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0900FF9EF9D00D7773A /* PKJSCharacterAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB08E0FF9EF9D00D7773A /* PKJSCharacterAssembly.m */; };
-		D34BB0A90FF9F14B00D7773A /* PKJSCommentState.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB0930FF9F14B00D7773A /* PKJSCommentState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0AA0FF9F14B00D7773A /* PKJSCommentState.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB0940FF9F14B00D7773A /* PKJSCommentState.m */; };
-		D34BB0AB0FF9F14B00D7773A /* PKJSDelimitState.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB0950FF9F14B00D7773A /* PKJSDelimitState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0AC0FF9F14B00D7773A /* PKJSDelimitState.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB0960FF9F14B00D7773A /* PKJSDelimitState.m */; };
-		D34BB0AD0FF9F14B00D7773A /* PKJSNumberState.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB0970FF9F14B00D7773A /* PKJSNumberState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0AE0FF9F14B00D7773A /* PKJSNumberState.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB0980FF9F14B00D7773A /* PKJSNumberState.m */; };
-		D34BB0AF0FF9F14B00D7773A /* PKJSQuoteState.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB0990FF9F14B00D7773A /* PKJSQuoteState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0B00FF9F14B00D7773A /* PKJSQuoteState.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB09A0FF9F14B00D7773A /* PKJSQuoteState.m */; };
-		D34BB0B10FF9F14B00D7773A /* PKJSSymbolState.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB09B0FF9F14B00D7773A /* PKJSSymbolState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0B20FF9F14B00D7773A /* PKJSSymbolState.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB09C0FF9F14B00D7773A /* PKJSSymbolState.m */; };
-		D34BB0B30FF9F14B00D7773A /* PKJSToken.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB09D0FF9F14B00D7773A /* PKJSToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0B40FF9F14B00D7773A /* PKJSToken.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB09E0FF9F14B00D7773A /* PKJSToken.m */; };
-		D34BB0B50FF9F14B00D7773A /* PKJSTokenAssembly.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB09F0FF9F14B00D7773A /* PKJSTokenAssembly.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0B60FF9F14B00D7773A /* PKJSTokenAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB0A00FF9F14B00D7773A /* PKJSTokenAssembly.m */; };
-		D34BB0B70FF9F14B00D7773A /* PKJSTokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB0A10FF9F14B00D7773A /* PKJSTokenizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0B80FF9F14B00D7773A /* PKJSTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB0A20FF9F14B00D7773A /* PKJSTokenizer.m */; };
-		D34BB0B90FF9F14B00D7773A /* PKJSTokenizerState.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB0A30FF9F14B00D7773A /* PKJSTokenizerState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0BA0FF9F14B00D7773A /* PKJSTokenizerState.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB0A40FF9F14B00D7773A /* PKJSTokenizerState.m */; };
-		D34BB0BB0FF9F14B00D7773A /* PKJSWhitespaceState.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB0A50FF9F14B00D7773A /* PKJSWhitespaceState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0BC0FF9F14B00D7773A /* PKJSWhitespaceState.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB0A60FF9F14B00D7773A /* PKJSWhitespaceState.m */; };
-		D34BB0BD0FF9F14B00D7773A /* PKJSWordState.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB0A70FF9F14B00D7773A /* PKJSWordState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0BE0FF9F14B00D7773A /* PKJSWordState.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB0A80FF9F14B00D7773A /* PKJSWordState.m */; };
-		D34BB0E60FF9F28000D7773A /* PKJSAlternation.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB0D20FF9F28000D7773A /* PKJSAlternation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0E70FF9F28000D7773A /* PKJSAlternation.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB0D30FF9F28000D7773A /* PKJSAlternation.m */; };
-		D34BB0E80FF9F28000D7773A /* PKJSAny.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB0D40FF9F28000D7773A /* PKJSAny.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0E90FF9F28000D7773A /* PKJSAny.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB0D50FF9F28000D7773A /* PKJSAny.m */; };
-		D34BB0EA0FF9F28000D7773A /* PKJSAssemblerAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB0D60FF9F28000D7773A /* PKJSAssemblerAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0EB0FF9F28000D7773A /* PKJSAssemblerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB0D70FF9F28000D7773A /* PKJSAssemblerAdapter.m */; };
-		D34BB0EC0FF9F28000D7773A /* PKJSCollectionParser.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB0D80FF9F28000D7773A /* PKJSCollectionParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0ED0FF9F28000D7773A /* PKJSCollectionParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB0D90FF9F28000D7773A /* PKJSCollectionParser.m */; };
-		D34BB0EE0FF9F28000D7773A /* PKJSEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB0DA0FF9F28000D7773A /* PKJSEmpty.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0EF0FF9F28000D7773A /* PKJSEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB0DB0FF9F28000D7773A /* PKJSEmpty.m */; };
-		D34BB0F00FF9F28000D7773A /* PKJSParser.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB0DC0FF9F28000D7773A /* PKJSParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0F10FF9F28000D7773A /* PKJSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB0DD0FF9F28000D7773A /* PKJSParser.m */; };
-		D34BB0F20FF9F28000D7773A /* PKJSRepetition.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB0DE0FF9F28000D7773A /* PKJSRepetition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0F30FF9F28000D7773A /* PKJSRepetition.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB0DF0FF9F28000D7773A /* PKJSRepetition.m */; };
-		D34BB0F40FF9F28000D7773A /* PKJSSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB0E00FF9F28000D7773A /* PKJSSequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0F50FF9F28000D7773A /* PKJSSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB0E10FF9F28000D7773A /* PKJSSequence.m */; };
-		D34BB0F60FF9F28000D7773A /* PKJSTerminal.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB0E20FF9F28000D7773A /* PKJSTerminal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0F70FF9F28000D7773A /* PKJSTerminal.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB0E30FF9F28000D7773A /* PKJSTerminal.m */; };
-		D34BB0F80FF9F28000D7773A /* PKJSTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB0E40FF9F28000D7773A /* PKJSTrack.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB0F90FF9F28000D7773A /* PKJSTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB0E50FF9F28000D7773A /* PKJSTrack.m */; };
-		D34BB1140FF9F36200D7773A /* PKJSCaseInsensitiveLiteral.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB0FE0FF9F36200D7773A /* PKJSCaseInsensitiveLiteral.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB1150FF9F36200D7773A /* PKJSCaseInsensitiveLiteral.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB0FF0FF9F36200D7773A /* PKJSCaseInsensitiveLiteral.m */; };
-		D34BB1160FF9F36200D7773A /* PKJSComment.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB1000FF9F36200D7773A /* PKJSComment.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB1170FF9F36200D7773A /* PKJSComment.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB1010FF9F36200D7773A /* PKJSComment.m */; };
-		D34BB1180FF9F36200D7773A /* PKJSDelimitedString.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB1020FF9F36200D7773A /* PKJSDelimitedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB1190FF9F36200D7773A /* PKJSDelimitedString.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB1030FF9F36200D7773A /* PKJSDelimitedString.m */; };
-		D34BB11A0FF9F36200D7773A /* PKJSLiteral.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB1040FF9F36200D7773A /* PKJSLiteral.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB11B0FF9F36200D7773A /* PKJSLiteral.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB1050FF9F36200D7773A /* PKJSLiteral.m */; };
-		D34BB11C0FF9F36200D7773A /* PKJSLowercaseWord.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB1060FF9F36200D7773A /* PKJSLowercaseWord.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB11D0FF9F36200D7773A /* PKJSLowercaseWord.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB1070FF9F36200D7773A /* PKJSLowercaseWord.m */; };
-		D34BB11E0FF9F36200D7773A /* PKJSNum.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB1080FF9F36200D7773A /* PKJSNum.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB11F0FF9F36200D7773A /* PKJSNum.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB1090FF9F36200D7773A /* PKJSNum.m */; };
-		D34BB1200FF9F36200D7773A /* PKJSPattern.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB10A0FF9F36200D7773A /* PKJSPattern.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB1210FF9F36200D7773A /* PKJSPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB10B0FF9F36200D7773A /* PKJSPattern.m */; };
-		D34BB1220FF9F36200D7773A /* PKJSQuotedString.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB10C0FF9F36200D7773A /* PKJSQuotedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB1230FF9F36200D7773A /* PKJSQuotedString.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB10D0FF9F36200D7773A /* PKJSQuotedString.m */; };
-		D34BB1240FF9F36200D7773A /* PKJSSymbol.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB10E0FF9F36200D7773A /* PKJSSymbol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB1250FF9F36200D7773A /* PKJSSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB10F0FF9F36200D7773A /* PKJSSymbol.m */; };
-		D34BB1260FF9F36200D7773A /* PKJSUppercaseWord.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB1100FF9F36200D7773A /* PKJSUppercaseWord.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB1270FF9F36200D7773A /* PKJSUppercaseWord.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB1110FF9F36200D7773A /* PKJSUppercaseWord.m */; };
-		D34BB1280FF9F36200D7773A /* PKJSWord.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BB1120FF9F36200D7773A /* PKJSWord.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D34BB1290FF9F36200D7773A /* PKJSWord.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BB1130FF9F36200D7773A /* PKJSWord.m */; };
-		D355C62E0FE9EFD6006A91A4 /* TDNSPredicateEvaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = D355C62C0FE9EFD6006A91A4 /* TDNSPredicateEvaluator.m */; };
-		D355C6A70FE9F704006A91A4 /* nspredicate.grammar in Resources */ = {isa = PBXBuildFile; fileRef = D35384EC0FE9691100926552 /* nspredicate.grammar */; };
 		D35D18A315D5AD15003DF6BC /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D6A5FE840307C02AAC07 /* AppKit.framework */; };
-		D35D18A515D5AD78003DF6BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35D18A415D5AD78003DF6BC /* CoreGraphics.framework */; };
 		D35F4A8711643630003811F3 /* PKEmailState.m in Sources */ = {isa = PBXBuildFile; fileRef = D35F4A8511643630003811F3 /* PKEmailState.m */; };
 		D35F4A8811643630003811F3 /* PKURLState.m in Sources */ = {isa = PBXBuildFile; fileRef = D35F4A8611643630003811F3 /* PKURLState.m */; };
-		D35F4A8911643630003811F3 /* PKEmailState.m in Sources */ = {isa = PBXBuildFile; fileRef = D35F4A8511643630003811F3 /* PKEmailState.m */; };
-		D35F4A8A11643630003811F3 /* PKURLState.m in Sources */ = {isa = PBXBuildFile; fileRef = D35F4A8611643630003811F3 /* PKURLState.m */; };
 		D35F4A8D11643662003811F3 /* PKEmailState.h in Headers */ = {isa = PBXBuildFile; fileRef = D35F4A8B11643662003811F3 /* PKEmailState.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D35F4A8E11643662003811F3 /* PKURLState.h in Headers */ = {isa = PBXBuildFile; fileRef = D35F4A8C11643662003811F3 /* PKURLState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D35F4A8F11643662003811F3 /* PKEmailState.h in Headers */ = {isa = PBXBuildFile; fileRef = D35F4A8B11643662003811F3 /* PKEmailState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D35F4A9011643662003811F3 /* PKURLState.h in Headers */ = {isa = PBXBuildFile; fileRef = D35F4A8C11643662003811F3 /* PKURLState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3668293101D2C000008632C /* erb.grammar in Resources */ = {isa = PBXBuildFile; fileRef = D3668291101D2BFA0008632C /* erb.grammar */; };
-		D36934721038E28300527AF3 /* PKParseTree.m in Sources */ = {isa = PBXBuildFile; fileRef = D36934561038DE5300527AF3 /* PKParseTree.m */; };
-		D36934731038E28700527AF3 /* PKParseTreeAssembler.m in Sources */ = {isa = PBXBuildFile; fileRef = D36934581038DE5300527AF3 /* PKParseTreeAssembler.m */; };
-		D36934741038E28B00527AF3 /* PKRuleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D369345A1038DE5300527AF3 /* PKRuleNode.m */; };
-		D36934751038E28F00527AF3 /* PKTokenNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D369345C1038DE5300527AF3 /* PKTokenNode.m */; };
 		D36C560C0FD363D500141CB7 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D36C560B0FD363D500141CB7 /* libicucore.dylib */; };
-		D36E98E00E58C12800496BD3 /* DebugAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D36E98DD0E58C12800496BD3 /* DebugAppDelegate.m */; };
-		D36E98E10E58C12800496BD3 /* DebugAppMainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D36E98DE0E58C12800496BD3 /* DebugAppMainMenu.xib */; };
-		D36E98E20E58C12800496BD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D36E98DF0E58C12800496BD3 /* main.m */; };
-		D36E98E70E58C14000496BD3 /* DemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D36E98E40E58C14000496BD3 /* DemoAppDelegate.m */; };
-		D36E98E80E58C14000496BD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D36E98E50E58C14000496BD3 /* main.m */; };
-		D36E98F80E58C1A000496BD3 /* DemoAppMainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D36E98F70E58C1A000496BD3 /* DemoAppMainMenu.xib */; };
-		D37A28671013942300E936B7 /* PKGrammarParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D3376D5810093A1600E4602E /* PKGrammarParser.m */; };
-		D37A28681013942A00E936B7 /* PKGrammarParser.h in Headers */ = {isa = PBXBuildFile; fileRef = D3376D5710093A1600E4602E /* PKGrammarParser.h */; };
-		D37D3A000FE77A71008C2E4D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D6A5FE840307C02AAC07 /* AppKit.framework */; };
-		D37D3A010FE77A72008C2E4D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D6A5FE840307C02AAC07 /* AppKit.framework */; };
-		D37D3A020FE77A77008C2E4D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D6A5FE840307C02AAC07 /* AppKit.framework */; };
 		D37D8DC91571A4F700CDB822 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37D8DC81571A4F700CDB822 /* SenTestingKit.framework */; };
 		D37D8DDE1571A57300CDB822 /* PKParseTree.m in Sources */ = {isa = PBXBuildFile; fileRef = D36934561038DE5300527AF3 /* PKParseTree.m */; };
 		D37D8DDF1571A57300CDB822 /* PKParseTreeAssembler.m in Sources */ = {isa = PBXBuildFile; fileRef = D36934581038DE5300527AF3 /* PKParseTreeAssembler.m */; };
@@ -327,142 +205,58 @@
 		D37D8E651571A74E00CDB822 /* TDXmlToken.m in Sources */ = {isa = PBXBuildFile; fileRef = D31FE5B40E60E66600A0803E /* TDXmlToken.m */; };
 		D37F23221453841100A98014 /* PKHashtagState.m in Sources */ = {isa = PBXBuildFile; fileRef = D37F23201453841100A98014 /* PKHashtagState.m */; };
 		D37F232B1453842900A98014 /* PKHashtagState.h in Headers */ = {isa = PBXBuildFile; fileRef = D37F232A1453842800A98014 /* PKHashtagState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D380AFBF0F0C54B60009EC13 /* html.css in Resources */ = {isa = PBXBuildFile; fileRef = D380AFBB0F0C54B60009EC13 /* html.css */; };
-		D380AFC00F0C54B60009EC13 /* html.grammar in Resources */ = {isa = PBXBuildFile; fileRef = D380AFBC0F0C54B60009EC13 /* html.grammar */; };
-		D380AFC30F0C56000009EC13 /* example.html in Resources */ = {isa = PBXBuildFile; fileRef = D380AFC20F0C56000009EC13 /* example.html */; };
-		D380B3230F0CC0800009EC13 /* nyt.html in Resources */ = {isa = PBXBuildFile; fileRef = D38DD9E70EC29F260070BC4D /* nyt.html */; };
-		D380B50A0F0D71B00009EC13 /* css.grammar in Resources */ = {isa = PBXBuildFile; fileRef = D380B5080F0D71A90009EC13 /* css.grammar */; };
-		D380B5390F0D7DE30009EC13 /* css.css in Resources */ = {isa = PBXBuildFile; fileRef = D380B5370F0D7DDE0009EC13 /* css.css */; };
-		D380B5950F0D82F90009EC13 /* example.css in Resources */ = {isa = PBXBuildFile; fileRef = D380B5930F0D82F60009EC13 /* example.css */; };
-		D380B9800F0EF3860009EC13 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DCB35C0EF5E52500DE5110 /* OCMock.framework */; };
-		D380BAA30F0F1D980009EC13 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D380BAA20F0F1D980009EC13 /* JavaScriptCore.framework */; };
 		D381AADC15D5953A004F690C /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D36E9F860E5A795400496BD3 /* libxml2.dylib */; };
-		D383498C0F0C0CF30055E4E0 /* json_with_comments.grammar in Resources */ = {isa = PBXBuildFile; fileRef = D383498A0F0C0CF30055E4E0 /* json_with_comments.grammar */; };
-		D38349BD0F0C0D910055E4E0 /* json_with_comments.css in Resources */ = {isa = PBXBuildFile; fileRef = D38349BB0F0C0D910055E4E0 /* json_with_comments.css */; };
-		D3834A490F0C14C00055E4E0 /* yahoo_with_comments.json in Resources */ = {isa = PBXBuildFile; fileRef = D3834A470F0C14B60055E4E0 /* yahoo_with_comments.json */; };
-		D385F98C0F046FE900DB2946 /* TDGenericAssembler.m in Sources */ = {isa = PBXBuildFile; fileRef = D385F9890F046FE900DB2946 /* TDGenericAssembler.m */; };
-		D385FA260F04993500DB2946 /* json.css in Resources */ = {isa = PBXBuildFile; fileRef = D385FA240F04993500DB2946 /* json.css */; };
-		D385FD440F05A88C00DB2946 /* TDMiniCSSAssembler.m in Sources */ = {isa = PBXBuildFile; fileRef = D385FD410F05A88C00DB2946 /* TDMiniCSSAssembler.m */; };
-		D385FD6C0F05A99900DB2946 /* mini_css.grammar in Resources */ = {isa = PBXBuildFile; fileRef = D385FD6B0F05A99900DB2946 /* mini_css.grammar */; };
-		D389F1D50F19666500558235 /* ParseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* ParseKit.framework */; };
-		D389F20B0F196A9200558235 /* JSParseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D389F1CE0F1965E600558235 /* JSParseKit.framework */; };
-		D389F20C0F196A9200558235 /* ParseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* ParseKit.framework */; };
-		D389F20E0F196A9200558235 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D389F20D0F196A9200558235 /* WebKit.framework */; };
-		D389F2E40F196CAE00558235 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D389F2E30F196CAE00558235 /* main.m */; };
-		D389F3430F197DDC00558235 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D380BAA20F0F1D980009EC13 /* JavaScriptCore.framework */; };
-		D389F34E0F197DF500558235 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D380BAA20F0F1D980009EC13 /* JavaScriptCore.framework */; };
-		D389F37A0F197E8000558235 /* JSDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D389F2E90F196F5B00558235 /* JSDemoAppDelegate.m */; };
-		D389F38F0F19800400558235 /* DefaultValues.plist in Resources */ = {isa = PBXBuildFile; fileRef = D389F38E0F19800400558235 /* DefaultValues.plist */; };
-		D389F4620F198A8800558235 /* Test.html in Resources */ = {isa = PBXBuildFile; fileRef = D389F4610F198A8800558235 /* Test.html */; };
-		D389F5590F19B7BC00558235 /* JSDemoAppMainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D389F5580F19B7BC00558235 /* JSDemoAppMainMenu.xib */; };
-		D389F5B80F19C76A00558235 /* TDJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D389F5B30F19C76A00558235 /* TDJsonParser.m */; };
-		D389FBCD0F1B25E200558235 /* ParserTest.html in Resources */ = {isa = PBXBuildFile; fileRef = D389FBCC0F1B25E200558235 /* ParserTest.html */; };
-		D398E20E0E60F86D00A1C877 /* yahoo.json in Resources */ = {isa = PBXBuildFile; fileRef = D3B473840E48C9CF008AFBDD /* yahoo.json */; };
-		D3B69D320E80249900D70C41 /* nonascii.html in Resources */ = {isa = PBXBuildFile; fileRef = D3B69D310E80249900D70C41 /* nonascii.html */; };
-		D3BBBC9D0FEC9756007DF30D /* TDXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BBBC9C0FEC9756007DF30D /* TDXMLParser.m */; };
-		D3BBBCC10FECD477007DF30D /* xml.grammar in Resources */ = {isa = PBXBuildFile; fileRef = D355C8800FEB36A1006A91A4 /* xml.grammar */; };
 		D3C221920FFE8B8C004514FE /* ParseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221900FFE8B8C004514FE /* ParseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221930FFE8B8C004514FE /* PKTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221910FFE8B8C004514FE /* PKTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221940FFE8B8C004514FE /* ParseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221900FFE8B8C004514FE /* ParseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221950FFE8B8C004514FE /* PKTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221910FFE8B8C004514FE /* PKTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221970FFE8B95004514FE /* PKReader.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221960FFE8B95004514FE /* PKReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221980FFE8B95004514FE /* PKReader.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221960FFE8B95004514FE /* PKReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C2219A0FFE8B9D004514FE /* PKAssembly.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221990FFE8B9D004514FE /* PKAssembly.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C2219B0FFE8B9D004514FE /* PKAssembly.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221990FFE8B9D004514FE /* PKAssembly.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C2219D0FFE8BA6004514FE /* PKParser.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C2219C0FFE8BA6004514FE /* PKParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C2219E0FFE8BA6004514FE /* PKParser.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C2219C0FFE8BA6004514FE /* PKParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221A00FFE8BAE004514FE /* PKRepetition.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C2219F0FFE8BAE004514FE /* PKRepetition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221A10FFE8BAE004514FE /* PKRepetition.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C2219F0FFE8BAE004514FE /* PKRepetition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221A30FFE8BBA004514FE /* PKCollectionParser.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221A20FFE8BBA004514FE /* PKCollectionParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221A40FFE8BBA004514FE /* PKCollectionParser.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221A20FFE8BBA004514FE /* PKCollectionParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221A60FFE8BC1004514FE /* PKAlternation.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221A50FFE8BC1004514FE /* PKAlternation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221A70FFE8BC1004514FE /* PKAlternation.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221A50FFE8BC1004514FE /* PKAlternation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221A90FFE8BC9004514FE /* PKSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221A80FFE8BC9004514FE /* PKSequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221AA0FFE8BC9004514FE /* PKSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221A80FFE8BC9004514FE /* PKSequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221AC0FFE8BCF004514FE /* PKTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221AB0FFE8BCF004514FE /* PKTrack.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221AD0FFE8BCF004514FE /* PKTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221AB0FFE8BCF004514FE /* PKTrack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221AF0FFE8BD4004514FE /* PKTrackException.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221AE0FFE8BD4004514FE /* PKTrackException.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221B00FFE8BD4004514FE /* PKTrackException.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221AE0FFE8BD4004514FE /* PKTrackException.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221B20FFE8BDB004514FE /* PKIntersection.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221B10FFE8BDB004514FE /* PKIntersection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221B30FFE8BDB004514FE /* PKIntersection.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221B10FFE8BDB004514FE /* PKIntersection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221B50FFE8BE2004514FE /* PKDifference.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221B40FFE8BE2004514FE /* PKDifference.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221B60FFE8BE2004514FE /* PKDifference.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221B40FFE8BE2004514FE /* PKDifference.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221B80FFE8BE8004514FE /* PKNegation.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221B70FFE8BE8004514FE /* PKNegation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221B90FFE8BE8004514FE /* PKNegation.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221B70FFE8BE8004514FE /* PKNegation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221BB0FFE8BEF004514FE /* PKTerminal.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221BA0FFE8BEF004514FE /* PKTerminal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221BC0FFE8BEF004514FE /* PKTerminal.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221BA0FFE8BEF004514FE /* PKTerminal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221BE0FFE8BF7004514FE /* PKEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221BD0FFE8BF7004514FE /* PKEmpty.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221BF0FFE8BF7004514FE /* PKEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221BD0FFE8BF7004514FE /* PKEmpty.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221C10FFE8BFF004514FE /* PKTokenAssembly.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221C00FFE8BFF004514FE /* PKTokenAssembly.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221C20FFE8BFF004514FE /* PKTokenAssembly.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221C00FFE8BFF004514FE /* PKTokenAssembly.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221C40FFE8C07004514FE /* PKToken.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221C30FFE8C07004514FE /* PKToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221C50FFE8C07004514FE /* PKToken.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221C30FFE8C07004514FE /* PKToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221C70FFE8C0D004514FE /* PKTokenArraySource.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221C60FFE8C0D004514FE /* PKTokenArraySource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221C80FFE8C0D004514FE /* PKTokenArraySource.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221C60FFE8C0D004514FE /* PKTokenArraySource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221CA0FFE8C15004514FE /* PKTokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221C90FFE8C15004514FE /* PKTokenizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221CB0FFE8C15004514FE /* PKTokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221C90FFE8C15004514FE /* PKTokenizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221CD0FFE8C1B004514FE /* PKTokenizerState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221CC0FFE8C1B004514FE /* PKTokenizerState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221CE0FFE8C1B004514FE /* PKTokenizerState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221CC0FFE8C1B004514FE /* PKTokenizerState.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221D00FFE8C24004514FE /* PKNumberState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221CF0FFE8C24004514FE /* PKNumberState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221D10FFE8C24004514FE /* PKNumberState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221CF0FFE8C24004514FE /* PKNumberState.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221D60FFE8C35004514FE /* PKSymbolState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221D50FFE8C35004514FE /* PKSymbolState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221D70FFE8C35004514FE /* PKSymbolState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221D50FFE8C35004514FE /* PKSymbolState.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221D90FFE8C3D004514FE /* PKWordState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221D80FFE8C3D004514FE /* PKWordState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221DA0FFE8C3D004514FE /* PKWordState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221D80FFE8C3D004514FE /* PKWordState.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221DC0FFE8C43004514FE /* PKWhitespaceState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221DB0FFE8C43004514FE /* PKWhitespaceState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221DD0FFE8C43004514FE /* PKWhitespaceState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221DB0FFE8C43004514FE /* PKWhitespaceState.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221DF0FFE8C49004514FE /* PKDelimitState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221DE0FFE8C49004514FE /* PKDelimitState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221E00FFE8C49004514FE /* PKDelimitState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221DE0FFE8C49004514FE /* PKDelimitState.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221E20FFE8C4E004514FE /* PKCommentState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221E10FFE8C4E004514FE /* PKCommentState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221E30FFE8C4E004514FE /* PKCommentState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221E10FFE8C4E004514FE /* PKCommentState.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221E50FFE8C56004514FE /* PKSingleLineCommentState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221E40FFE8C56004514FE /* PKSingleLineCommentState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221E60FFE8C56004514FE /* PKSingleLineCommentState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221E40FFE8C56004514FE /* PKSingleLineCommentState.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221E80FFE8C60004514FE /* PKMultiLineCommentState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221E70FFE8C60004514FE /* PKMultiLineCommentState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221E90FFE8C60004514FE /* PKMultiLineCommentState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221E70FFE8C60004514FE /* PKMultiLineCommentState.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221EB0FFE8C69004514FE /* PKSymbolNode.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221EA0FFE8C69004514FE /* PKSymbolNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221EC0FFE8C69004514FE /* PKSymbolNode.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221EA0FFE8C69004514FE /* PKSymbolNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221EE0FFE8C6F004514FE /* PKSymbolRootNode.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221ED0FFE8C6F004514FE /* PKSymbolRootNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221EF0FFE8C6F004514FE /* PKSymbolRootNode.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221ED0FFE8C6F004514FE /* PKSymbolRootNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221F20FFE8C7A004514FE /* PKPattern.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221F00FFE8C7A004514FE /* PKPattern.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221F40FFE8C87004514FE /* PKWord.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221F30FFE8C87004514FE /* PKWord.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221F50FFE8C87004514FE /* PKWord.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221F30FFE8C87004514FE /* PKWord.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221F70FFE8C8E004514FE /* PKNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221F60FFE8C8E004514FE /* PKNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221FA0FFE8C97004514FE /* PKQuotedString.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221F90FFE8C97004514FE /* PKQuotedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221FB0FFE8C97004514FE /* PKQuotedString.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221F90FFE8C97004514FE /* PKQuotedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C221FD0FFE8CB2004514FE /* PKSymbol.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221FC0FFE8CB2004514FE /* PKSymbol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C221FE0FFE8CB2004514FE /* PKSymbol.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221FC0FFE8CB2004514FE /* PKSymbol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C222000FFE8CB9004514FE /* PKLiteral.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221FF0FFE8CB9004514FE /* PKLiteral.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C222010FFE8CB9004514FE /* PKLiteral.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221FF0FFE8CB9004514FE /* PKLiteral.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C222030FFE8CC4004514FE /* PKCaseInsensitiveLiteral.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C222020FFE8CC4004514FE /* PKCaseInsensitiveLiteral.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C222040FFE8CC4004514FE /* PKCaseInsensitiveLiteral.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C222020FFE8CC4004514FE /* PKCaseInsensitiveLiteral.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C222060FFE8CCA004514FE /* PKWhitespace.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C222050FFE8CCA004514FE /* PKWhitespace.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C222070FFE8CCA004514FE /* PKWhitespace.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C222050FFE8CCA004514FE /* PKWhitespace.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C222090FFE8CD1004514FE /* PKComment.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C222080FFE8CD1004514FE /* PKComment.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C2220A0FFE8CD1004514FE /* PKComment.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C222080FFE8CD1004514FE /* PKComment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C2220C0FFE8CD8004514FE /* PKDelimitedString.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C2220B0FFE8CD8004514FE /* PKDelimitedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C2220D0FFE8CD8004514FE /* PKDelimitedString.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C2220B0FFE8CD8004514FE /* PKDelimitedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C2220F0FFE8CDF004514FE /* PKAny.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C2220E0FFE8CDF004514FE /* PKAny.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C222100FFE8CDF004514FE /* PKAny.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C2220E0FFE8CDF004514FE /* PKAny.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C222150FFE8D01004514FE /* PKLowercaseWord.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C222140FFE8D01004514FE /* PKLowercaseWord.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C222160FFE8D01004514FE /* PKLowercaseWord.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C222140FFE8D01004514FE /* PKLowercaseWord.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C222180FFE8D11004514FE /* PKUppercaseWord.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C222170FFE8D11004514FE /* PKUppercaseWord.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C222190FFE8D11004514FE /* PKUppercaseWord.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C222170FFE8D11004514FE /* PKUppercaseWord.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C2221B0FFE8D32004514FE /* PKCharacterAssembly.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C2221A0FFE8D32004514FE /* PKCharacterAssembly.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C2221C0FFE8D32004514FE /* PKCharacterAssembly.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C2221A0FFE8D32004514FE /* PKCharacterAssembly.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C2221E0FFE8D3B004514FE /* PKChar.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C2221D0FFE8D3B004514FE /* PKChar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C2221F0FFE8D3B004514FE /* PKChar.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C2221D0FFE8D3B004514FE /* PKChar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C222210FFE8D42004514FE /* PKDigit.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C222200FFE8D42004514FE /* PKDigit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C222220FFE8D42004514FE /* PKDigit.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C222200FFE8D42004514FE /* PKDigit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C222240FFE8D49004514FE /* PKLetter.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C222230FFE8D49004514FE /* PKLetter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C222250FFE8D49004514FE /* PKLetter.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C222230FFE8D49004514FE /* PKLetter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C222270FFE8D6B004514FE /* PKSpecificChar.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C222260FFE8D6B004514FE /* PKSpecificChar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C222280FFE8D6B004514FE /* PKSpecificChar.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C222260FFE8D6B004514FE /* PKSpecificChar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C2222A0FFE8DAC004514FE /* PKParserFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C222290FFE8DAC004514FE /* PKParserFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C2222B0FFE8DAC004514FE /* PKParserFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C222290FFE8DAC004514FE /* PKParserFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3C2222D0FFE8DE9004514FE /* NSArray+ParseKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BAFD30FF9E95500D7773A /* NSArray+ParseKitAdditions.h */; };
 		D3C2222E0FFE8DEE004514FE /* NSString+ParseKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BAFD50FF9E95500D7773A /* NSString+ParseKitAdditions.h */; };
-		D3C2222F0FFE8DEF004514FE /* NSString+ParseKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BAFD50FF9E95500D7773A /* NSString+ParseKitAdditions.h */; };
-		D3C222300FFE8DF3004514FE /* NSArray+ParseKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D34BAFD30FF9E95500D7773A /* NSArray+ParseKitAdditions.h */; };
 		D3CF38761571A7EC0089A070 /* TDXmlAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = D31FE5BA0E60E69E00A0803E /* TDXmlAttribute.m */; };
 		D3CF38771571A7EC0089A070 /* TDXmlCdata.m in Sources */ = {isa = PBXBuildFile; fileRef = D31FE5BC0E60E69E00A0803E /* TDXmlCdata.m */; };
 		D3CF38791571A7F00089A070 /* TDXmlComment.m in Sources */ = {isa = PBXBuildFile; fileRef = D31FE5BE0E60E69E00A0803E /* TDXmlComment.m */; };
@@ -488,124 +282,18 @@
 		D3CF388D1571A7FA0089A070 /* TDXmlNameTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D31FE5F70E60E6B500A0803E /* TDXmlNameTest.m */; };
 		D3CF388E1571A7FA0089A070 /* TDXmlNmtoken.m in Sources */ = {isa = PBXBuildFile; fileRef = D31FE5F90E60E6B500A0803E /* TDXmlNmtoken.m */; };
 		D3CF388F1571A7FA0089A070 /* TDXmlNmtokenState.m in Sources */ = {isa = PBXBuildFile; fileRef = D31FE5FB0E60E6B500A0803E /* TDXmlNmtokenState.m */; };
-		D3D01CAB0EFDB8A000C24DDE /* json_with_discards.grammar in Resources */ = {isa = PBXBuildFile; fileRef = D3D01CA90EFDB89900C24DDE /* json_with_discards.grammar */; };
-		D3D01CAC0EFDB8A100C24DDE /* json_with_discards.grammar in Resources */ = {isa = PBXBuildFile; fileRef = D3D01CA90EFDB89900C24DDE /* json_with_discards.grammar */; };
-		D3DCB4C40EF6015C00DE5110 /* json.grammar in Resources */ = {isa = PBXBuildFile; fileRef = D3DCB4C20EF6015300DE5110 /* json.grammar */; };
-		D3DCB4C50EF6015C00DE5110 /* json.grammar in Resources */ = {isa = PBXBuildFile; fileRef = D3DCB4C20EF6015300DE5110 /* json.grammar */; };
-		D3DDDA870F0779FD00A58000 /* TDSyntaxHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DDDA860F0779FD00A58000 /* TDSyntaxHighlighter.m */; };
-		D3DDDCAE0F0880D800A58000 /* example1.srgs in Resources */ = {isa = PBXBuildFile; fileRef = D3DDDCAC0F0880D800A58000 /* example1.srgs */; };
-		D3E27A320E741DD20078CC2C /* small-xml-file.xml in Resources */ = {isa = PBXBuildFile; fileRef = D36EA3AF0E5EA67E00496BD3 /* small-xml-file.xml */; };
-		D3E27A330E741DD20078CC2C /* apple-boss.xml in Resources */ = {isa = PBXBuildFile; fileRef = D36E9FB40E5A944A00496BD3 /* apple-boss.xml */; };
-		D3E785560E53FB54008C7D61 /* apple-boss.json in Resources */ = {isa = PBXBuildFile; fileRef = D3E784BC0E53DA28008C7D61 /* apple-boss.json */; };
 		D3E787A30E5661A9008C7D61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D69BFE84028FC02AAC07 /* Foundation.framework */; };
-		D3EAC7EC0F2690620043D6A9 /* OCMock.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D3DCB35C0EF5E52500DE5110 /* OCMock.framework */; };
-		D3EADD810E75E9CC00F78584 /* nasty.html in Resources */ = {isa = PBXBuildFile; fileRef = D3EADD7F0E75E9CC00F78584 /* nasty.html */; };
-		D3EADD8F0E75EAA400F78584 /* TDHtmlSyntaxHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EADD8C0E75EAA400F78584 /* TDHtmlSyntaxHighlighter.m */; };
 		D3F0E2480FFE8EB900C9DF74 /* PKQuoteState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3F0E2470FFE8EB900C9DF74 /* PKQuoteState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3F0E2490FFE8EB900C9DF74 /* PKQuoteState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3F0E2470FFE8EB900C9DF74 /* PKQuoteState.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3F0E3CB0FFEB70100C9DF74 /* PKNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C221F60FFE8C8E004514FE /* PKNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3F0E3CC0FFEB70700C9DF74 /* PKNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAF440FF9E19700D7773A /* PKNumber.m */; };
-		D3F5629A10266CFC00DD6DB1 /* PKParseTreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F5629910266CFC00DD6DB1 /* PKParseTreeView.m */; };
-		D3F562A010266DFB00DD6DB1 /* DemoTokensViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F5629F10266DFB00DD6DB1 /* DemoTokensViewController.m */; };
-		D3F562A210266E5300DD6DB1 /* TokensView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F562A110266E5300DD6DB1 /* TokensView.xib */; };
-		D3F562A410266E6300DD6DB1 /* TreesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F562A310266E6300DD6DB1 /* TreesView.xib */; };
-		D3F562A710266E8D00DD6DB1 /* DemoTreesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F562A610266E8D00DD6DB1 /* DemoTreesViewController.m */; };
-		D3F740B70EF8C38A00559B9F /* JSONAssembler.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F740B60EF8C38A00559B9F /* JSONAssembler.m */; };
-		D3F741BF0EF9F29400559B9F /* css2_1.grammar in Resources */ = {isa = PBXBuildFile; fileRef = D3F741BD0EF9F28D00559B9F /* css2_1.grammar */; };
-		D3F741C00EF9F29500559B9F /* css2_1.grammar in Resources */ = {isa = PBXBuildFile; fileRef = D3F741BD0EF9F28D00559B9F /* css2_1.grammar */; };
-		D3FD79210F4CC87900BAD816 /* rubyhash.grammar in Resources */ = {isa = PBXBuildFile; fileRef = D3FD791F0F4CC86800BAD816 /* rubyhash.grammar */; };
 		D3FDC4A50FFB3B2A00F1F797 /* RegexKitLite.h in Headers */ = {isa = PBXBuildFile; fileRef = D36C55FC0FD3617B00141CB7 /* RegexKitLite.h */; };
-		D3FDC6DA0FFC4C8C00F1F797 /* RegexKitLite.h in Headers */ = {isa = PBXBuildFile; fileRef = D36C55FC0FD3617B00141CB7 /* RegexKitLite.h */; };
-		D3FDC6EE0FFC4C9E00F1F797 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = D36C55FD0FD3617B00141CB7 /* RegexKitLite.m */; };
-		D3FDC6EF0FFC4C9E00F1F797 /* PKReader.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAD9B0FF9C95800D7773A /* PKReader.m */; };
-		D3FDC6F00FFC4C9E00F1F797 /* PKAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BADA00FF9C9B000D7773A /* PKAssembly.m */; };
-		D3FDC6F10FFC4C9E00F1F797 /* PKParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BADD60FF9CBFB00D7773A /* PKParser.m */; };
-		D3FDC6F20FFC4C9E00F1F797 /* PKRepetition.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAE130FF9CE0E00D7773A /* PKRepetition.m */; };
-		D3FDC6F30FFC4C9E00F1F797 /* PKCollectionParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAE010FF9CCAE00D7773A /* PKCollectionParser.m */; };
-		D3FDC6F40FFC4C9E00F1F797 /* PKAlternation.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAE0B0FF9CE0E00D7773A /* PKAlternation.m */; };
-		D3FDC6F50FFC4C9E00F1F797 /* PKSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAE150FF9CE0E00D7773A /* PKSequence.m */; };
-		D3FDC6F60FFC4C9E00F1F797 /* PKTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAE190FF9CE0E00D7773A /* PKTrack.m */; };
-		D3FDC6F70FFC4C9E00F1F797 /* PKTrackException.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAE1B0FF9CE0E00D7773A /* PKTrackException.m */; };
-		D3FDC6F80FFC4C9E00F1F797 /* PKDifference.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAE0F0FF9CE0E00D7773A /* PKDifference.m */; };
-		D3FDC6F90FFC4C9E00F1F797 /* PKIntersection.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAE110FF9CE0E00D7773A /* PKIntersection.m */; };
-		D3FDC6FA0FFC4C9E00F1F797 /* PKTerminal.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAE170FF9CE0E00D7773A /* PKTerminal.m */; };
-		D3FDC6FB0FFC4C9E00F1F797 /* PKEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAE0D0FF9CE0E00D7773A /* PKEmpty.m */; };
-		D3FDC6FC0FFC4C9E00F1F797 /* PKTokenAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAE8B0FF9D15100D7773A /* PKTokenAssembly.m */; };
-		D3FDC6FD0FFC4C9E00F1F797 /* PKToken.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAE950FF9D20900D7773A /* PKToken.m */; };
-		D3FDC6FE0FFC4C9E00F1F797 /* PKTokenArraySource.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAE970FF9D20900D7773A /* PKTokenArraySource.m */; };
-		D3FDC6FF0FFC4C9E00F1F797 /* PKTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAE990FF9D20900D7773A /* PKTokenizer.m */; };
-		D3FDC7000FFC4C9E00F1F797 /* PKTokenizerState.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAE9B0FF9D20900D7773A /* PKTokenizerState.m */; };
-		D3FDC7010FFC4C9E00F1F797 /* PKNumberState.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAECA0FF9D56400D7773A /* PKNumberState.m */; };
-		D3FDC7020FFC4C9E00F1F797 /* PKQuoteState.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAECC0FF9D56400D7773A /* PKQuoteState.m */; };
-		D3FDC7030FFC4C9E00F1F797 /* PKSymbolState.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAED00FF9D56400D7773A /* PKSymbolState.m */; };
-		D3FDC7040FFC4C9E00F1F797 /* PKWordState.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAED60FF9D56400D7773A /* PKWordState.m */; };
-		D3FDC7050FFC4C9E00F1F797 /* PKWhitespaceState.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAED20FF9D56400D7773A /* PKWhitespaceState.m */; };
-		D3FDC7060FFC4C9E00F1F797 /* PKDelimitState.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAEC60FF9D56400D7773A /* PKDelimitState.m */; };
-		D3FDC7070FFC4C9E00F1F797 /* PKCommentState.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAEC40FF9D56400D7773A /* PKCommentState.m */; };
-		D3FDC7080FFC4C9E00F1F797 /* PKSingleLineCommentState.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAECE0FF9D56400D7773A /* PKSingleLineCommentState.m */; };
-		D3FDC7090FFC4C9E00F1F797 /* PKMultiLineCommentState.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAEC80FF9D56400D7773A /* PKMultiLineCommentState.m */; };
-		D3FDC70A0FFC4C9E00F1F797 /* PKSymbolNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAF240FF9DF9900D7773A /* PKSymbolNode.m */; };
-		D3FDC70B0FFC4C9E00F1F797 /* PKSymbolRootNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAF260FF9DF9900D7773A /* PKSymbolRootNode.m */; };
-		D3FDC70C0FFC4C9E00F1F797 /* PKPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAF380FF9E18300D7773A /* PKPattern.m */; };
-		D3FDC70D0FFC4C9E00F1F797 /* PKWord.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAED40FF9D56400D7773A /* PKWord.m */; };
-		D3FDC70F0FFC4C9E00F1F797 /* PKQuotedString.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAF460FF9E19700D7773A /* PKQuotedString.m */; };
-		D3FDC7100FFC4C9E00F1F797 /* PKSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAF480FF9E19700D7773A /* PKSymbol.m */; };
-		D3FDC7110FFC4C9E00F1F797 /* PKLiteral.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAF420FF9E19700D7773A /* PKLiteral.m */; };
-		D3FDC7120FFC4C9E00F1F797 /* PKCaseInsensitiveLiteral.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAF3C0FF9E19700D7773A /* PKCaseInsensitiveLiteral.m */; };
-		D3FDC7130FFC4C9E00F1F797 /* PKWhitespace.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAF4A0FF9E19700D7773A /* PKWhitespace.m */; };
-		D3FDC7140FFC4C9E00F1F797 /* PKComment.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAF3E0FF9E19700D7773A /* PKComment.m */; };
-		D3FDC7150FFC4C9E00F1F797 /* PKDelimitedString.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAF400FF9E19700D7773A /* PKDelimitedString.m */; };
-		D3FDC7160FFC4C9E00F1F797 /* PKAny.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAE2F0FF9CE6000D7773A /* PKAny.m */; };
-		D3FDC7180FFC4C9E00F1F797 /* PKLowercaseWord.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAF990FF9E6D100D7773A /* PKLowercaseWord.m */; };
-		D3FDC7190FFC4C9E00F1F797 /* PKUppercaseWord.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAF9B0FF9E6D100D7773A /* PKUppercaseWord.m */; };
-		D3FDC71A0FFC4C9E00F1F797 /* PKCharacterAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAFB00FF9E7F300D7773A /* PKCharacterAssembly.m */; };
-		D3FDC71B0FFC4C9E00F1F797 /* PKChar.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAFB40FF9E80300D7773A /* PKChar.m */; };
-		D3FDC71C0FFC4C9E00F1F797 /* PKDigit.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAFB60FF9E80300D7773A /* PKDigit.m */; };
-		D3FDC71D0FFC4C9E00F1F797 /* PKLetter.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAFB80FF9E80300D7773A /* PKLetter.m */; };
-		D3FDC71E0FFC4C9E00F1F797 /* PKSpecificChar.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAFBA0FF9E80300D7773A /* PKSpecificChar.m */; };
-		D3FDC71F0FFC4C9E00F1F797 /* PKParserFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAFD80FF9E95500D7773A /* PKParserFactory.m */; };
-		D3FDC7200FFC4C9E00F1F797 /* NSArray+ParseKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAFD40FF9E95500D7773A /* NSArray+ParseKitAdditions.m */; };
-		D3FDC7210FFC4C9E00F1F797 /* NSString+ParseKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAFD60FF9E95500D7773A /* NSString+ParseKitAdditions.m */; };
-		D3FDC7370FFC4D6100F1F797 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FDC7360FFC4D6100F1F797 /* Foundation.framework */; };
-		D3FDC7390FFC4D6100F1F797 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FDC7380FFC4D6100F1F797 /* libicucore.dylib */; };
-		D3FDC8DC0FFC51F200F1F797 /* ParseKitMobile_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = D3FDC8DB0FFC51F200F1F797 /* ParseKitMobile_Prefix.pch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D334949F0E296AA900406085 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
-			remoteInfo = TODParseKit;
-		};
-		D341850F0E520D6F0081B0DC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
-			remoteInfo = TODParseKit;
-		};
 		D37D8E571571A5A900CDB822 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
 			remoteInfo = ParseKit;
-		};
-		D389F1D30F19665C00558235 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
-			remoteInfo = TDParseKit;
-		};
-		D389F2090F196A8000558235 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D389F1CD0F1965E600558235;
-			remoteInfo = TDJSParseKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -617,17 +305,6 @@
 			dstSubfolderSpec = 0;
 			files = (
 				D37D8E5C1571A5C900CDB822 /* OCMock.framework in Copy Frameworks */,
-			);
-			name = "Copy Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D380B9A10F0EF3DC0009EC13 /* Copy Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(BUILT_PRODUCTS_DIR)";
-			dstSubfolderSpec = 0;
-			files = (
-				D3EAC7EC0F2690620043D6A9 /* OCMock.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -779,7 +456,6 @@
 		D3305C4C102F5BAD00DC4F75 /* TDGutterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDGutterView.m; path = demoapp/TDGutterView.m; sourceTree = "<group>"; };
 		D3305C4D102F5BAE00DC4F75 /* TDSourceCodeTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDSourceCodeTextView.h; path = demoapp/TDSourceCodeTextView.h; sourceTree = "<group>"; };
 		D3305C4E102F5BAE00DC4F75 /* TDSourceCodeTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDSourceCodeTextView.m; path = demoapp/TDSourceCodeTextView.m; sourceTree = "<group>"; };
-		D33494100E2963FD00406085 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3376D5710093A1600E4602E /* PKGrammarParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKGrammarParser.h; path = src/PKGrammarParser.h; sourceTree = "<group>"; };
 		D3376D5810093A1600E4602E /* PKGrammarParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKGrammarParser.m; path = src/PKGrammarParser.m; sourceTree = "<group>"; };
 		D3376D8C10096C0700E4602E /* PKAST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKAST.h; path = test/PKAST.h; sourceTree = "<group>"; };
@@ -797,7 +473,6 @@
 		D33DC194116562DB004CE58C /* TDTwitterStateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDTwitterStateTest.m; path = test/TDTwitterStateTest.m; sourceTree = "<group>"; };
 		D33DC1971165634F004CE58C /* PKTwitterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKTwitterState.m; path = src/PKTwitterState.m; sourceTree = "<group>"; };
 		D33DC19F11656952004CE58C /* PKTwitterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKTwitterState.h; path = include/ParseKit/PKTwitterState.h; sourceTree = "<group>"; };
-		D34185040E520D3F0081B0DC /* DebugApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DebugApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34BAC210FF87F8600D7773A /* TDParserFactoryTest3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDParserFactoryTest3.h; path = test/TDParserFactoryTest3.h; sourceTree = "<group>"; };
 		D34BAC220FF87F8600D7773A /* TDParserFactoryTest3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDParserFactoryTest3.m; path = test/TDParserFactoryTest3.m; sourceTree = "<group>"; };
 		D34BAC490FF892C200D7773A /* XPathParserGrammarTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XPathParserGrammarTest.h; path = test/XPathParserGrammarTest.h; sourceTree = "<group>"; };
@@ -1029,8 +704,6 @@
 		D385FD6B0F05A99900DB2946 /* mini_css.grammar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = mini_css.grammar; path = res/mini_css.grammar; sourceTree = "<group>"; };
 		D389A0B00F1FCC99003B43BD /* RelaxParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RelaxParser.h; path = test/RelaxParser.h; sourceTree = "<group>"; };
 		D389A0B10F1FCC99003B43BD /* RelaxParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RelaxParser.m; path = test/RelaxParser.m; sourceTree = "<group>"; };
-		D389F1CE0F1965E600558235 /* JSParseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSParseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D389F2030F196A7500558235 /* JSDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D389F20D0F196A9200558235 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		D389F2E30F196CAE00558235 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = jsdemoapp/main.m; sourceTree = "<group>"; };
 		D389F2E80F196F5B00558235 /* JSDemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSDemoAppDelegate.h; path = jsdemoapp/JSDemoAppDelegate.h; sourceTree = "<group>"; };
@@ -1184,7 +857,6 @@
 		D3F741430EF8E96A00559B9F /* xpath1_0.grammar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = xpath1_0.grammar; path = res/xpath1_0.grammar; sourceTree = "<group>"; };
 		D3F741BD0EF9F28D00559B9F /* css2_1.grammar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = css2_1.grammar; path = res/css2_1.grammar; sourceTree = "<group>"; };
 		D3FD791F0F4CC86800BAD816 /* rubyhash.grammar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = rubyhash.grammar; path = res/rubyhash.grammar; sourceTree = "<group>"; };
-		D3FDC5830FFC4BFC00F1F797 /* libparsekit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libparsekit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3FDC7360FFC4D6100F1F797 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D3FDC7380FFC4D6100F1F797 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		D3FDC8DB0FFC51F200F1F797 /* ParseKitMobile_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseKitMobile_Prefix.pch; sourceTree = "<group>"; };
@@ -1200,27 +872,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D334940E0E2963FD00406085 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D33494720E29670B00406085 /* ParseKit.framework in Frameworks */,
-				D37D3A000FE77A71008C2E4D /* AppKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D34185020E520D3F0081B0DC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D31FE7380E60F36600A0803E /* libxml2.dylib in Frameworks */,
-				D341850C0E520D640081B0DC /* ParseKit.framework in Frameworks */,
-				D380B9800F0EF3860009EC13 /* OCMock.framework in Frameworks */,
-				D380BAA30F0F1D980009EC13 /* JavaScriptCore.framework in Frameworks */,
-				D37D3A010FE77A72008C2E4D /* AppKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D37D8DC21571A4F700CDB822 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1233,37 +884,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D389F1CC0F1965E600558235 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D389F34E0F197DF500558235 /* JavaScriptCore.framework in Frameworks */,
-				D389F1D50F19666500558235 /* ParseKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D389F2010F196A7500558235 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D389F3430F197DDC00558235 /* JavaScriptCore.framework in Frameworks */,
-				D389F20E0F196A9200558235 /* WebKit.framework in Frameworks */,
-				D389F20C0F196A9200558235 /* ParseKit.framework in Frameworks */,
-				D389F20B0F196A9200558235 /* JSParseKit.framework in Frameworks */,
-				D37D3A020FE77A77008C2E4D /* AppKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D3FDC5810FFC4BFC00F1F797 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D35D18A515D5AD78003DF6BC /* CoreGraphics.framework in Frameworks */,
-				D3FDC7370FFC4D6100F1F797 /* Foundation.framework in Frameworks */,
-				D3FDC7390FFC4D6100F1F797 /* libicucore.dylib in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -1271,11 +891,6 @@
 			isa = PBXGroup;
 			children = (
 				8DC2EF5B0486A6940098B216 /* ParseKit.framework */,
-				D389F1CE0F1965E600558235 /* JSParseKit.framework */,
-				D33494100E2963FD00406085 /* DemoApp.app */,
-				D34185040E520D3F0081B0DC /* DebugApp.app */,
-				D389F2030F196A7500558235 /* JSDemoApp.app */,
-				D3FDC5830FFC4BFC00F1F797 /* libparsekit.a */,
 				D37D8DC61571A4F700CDB822 /* Tests.octest */,
 			);
 			name = Products;
@@ -2435,117 +2050,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D389F1C90F1965E600558235 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D34BB0680FF9EDDF00D7773A /* JSParseKit.h in Headers */,
-				D34BB0710FF9EE4000D7773A /* PKJSAssembly.h in Headers */,
-				D34BB0730FF9EE4000D7773A /* PKJSUtils.h in Headers */,
-				D34BB0750FF9EE4000D7773A /* PKJSUtils_macros.h in Headers */,
-				D34BB0760FF9EE4000D7773A /* PKJSValueHolder.h in Headers */,
-				D34BB08F0FF9EF9D00D7773A /* PKJSCharacterAssembly.h in Headers */,
-				D34BB0A90FF9F14B00D7773A /* PKJSCommentState.h in Headers */,
-				D34BB0AB0FF9F14B00D7773A /* PKJSDelimitState.h in Headers */,
-				D34BB0AD0FF9F14B00D7773A /* PKJSNumberState.h in Headers */,
-				D34BB0AF0FF9F14B00D7773A /* PKJSQuoteState.h in Headers */,
-				D34BB0B10FF9F14B00D7773A /* PKJSSymbolState.h in Headers */,
-				D34BB0B30FF9F14B00D7773A /* PKJSToken.h in Headers */,
-				D34BB0B50FF9F14B00D7773A /* PKJSTokenAssembly.h in Headers */,
-				D34BB0B70FF9F14B00D7773A /* PKJSTokenizer.h in Headers */,
-				D34BB0B90FF9F14B00D7773A /* PKJSTokenizerState.h in Headers */,
-				D34BB0BB0FF9F14B00D7773A /* PKJSWhitespaceState.h in Headers */,
-				D34BB0BD0FF9F14B00D7773A /* PKJSWordState.h in Headers */,
-				D34BB0E60FF9F28000D7773A /* PKJSAlternation.h in Headers */,
-				D34BB0E80FF9F28000D7773A /* PKJSAny.h in Headers */,
-				D34BB0EA0FF9F28000D7773A /* PKJSAssemblerAdapter.h in Headers */,
-				D34BB0EC0FF9F28000D7773A /* PKJSCollectionParser.h in Headers */,
-				D34BB0EE0FF9F28000D7773A /* PKJSEmpty.h in Headers */,
-				D34BB0F00FF9F28000D7773A /* PKJSParser.h in Headers */,
-				D34BB0F20FF9F28000D7773A /* PKJSRepetition.h in Headers */,
-				D34BB0F40FF9F28000D7773A /* PKJSSequence.h in Headers */,
-				D34BB0F60FF9F28000D7773A /* PKJSTerminal.h in Headers */,
-				D34BB0F80FF9F28000D7773A /* PKJSTrack.h in Headers */,
-				D34BB1140FF9F36200D7773A /* PKJSCaseInsensitiveLiteral.h in Headers */,
-				D34BB1160FF9F36200D7773A /* PKJSComment.h in Headers */,
-				D34BB1180FF9F36200D7773A /* PKJSDelimitedString.h in Headers */,
-				D34BB11A0FF9F36200D7773A /* PKJSLiteral.h in Headers */,
-				D34BB11C0FF9F36200D7773A /* PKJSLowercaseWord.h in Headers */,
-				D34BB11E0FF9F36200D7773A /* PKJSNum.h in Headers */,
-				D34BB1200FF9F36200D7773A /* PKJSPattern.h in Headers */,
-				D34BB1220FF9F36200D7773A /* PKJSQuotedString.h in Headers */,
-				D34BB1240FF9F36200D7773A /* PKJSSymbol.h in Headers */,
-				D34BB1260FF9F36200D7773A /* PKJSUppercaseWord.h in Headers */,
-				D34BB1280FF9F36200D7773A /* PKJSWord.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D3FDC57F0FFC4BFC00F1F797 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D3FDC6DA0FFC4C8C00F1F797 /* RegexKitLite.h in Headers */,
-				D3FDC8DC0FFC51F200F1F797 /* ParseKitMobile_Prefix.pch in Headers */,
-				D3C221940FFE8B8C004514FE /* ParseKit.h in Headers */,
-				D3C221950FFE8B8C004514FE /* PKTypes.h in Headers */,
-				D3C221980FFE8B95004514FE /* PKReader.h in Headers */,
-				D3C2219B0FFE8B9D004514FE /* PKAssembly.h in Headers */,
-				D3C2219E0FFE8BA6004514FE /* PKParser.h in Headers */,
-				D3C221A10FFE8BAE004514FE /* PKRepetition.h in Headers */,
-				D3C221A40FFE8BBA004514FE /* PKCollectionParser.h in Headers */,
-				D3C221A70FFE8BC1004514FE /* PKAlternation.h in Headers */,
-				D3C221AA0FFE8BC9004514FE /* PKSequence.h in Headers */,
-				D3C221AD0FFE8BCF004514FE /* PKTrack.h in Headers */,
-				D3C221B00FFE8BD4004514FE /* PKTrackException.h in Headers */,
-				D3C221B30FFE8BDB004514FE /* PKIntersection.h in Headers */,
-				D3C221B60FFE8BE2004514FE /* PKDifference.h in Headers */,
-				D3C221B90FFE8BE8004514FE /* PKNegation.h in Headers */,
-				D3C221BC0FFE8BEF004514FE /* PKTerminal.h in Headers */,
-				D3C221BF0FFE8BF7004514FE /* PKEmpty.h in Headers */,
-				D3C221C20FFE8BFF004514FE /* PKTokenAssembly.h in Headers */,
-				D3C221C50FFE8C07004514FE /* PKToken.h in Headers */,
-				D3C221C80FFE8C0D004514FE /* PKTokenArraySource.h in Headers */,
-				D3C221CB0FFE8C15004514FE /* PKTokenizer.h in Headers */,
-				D3C221CE0FFE8C1B004514FE /* PKTokenizerState.h in Headers */,
-				D3C221D10FFE8C24004514FE /* PKNumberState.h in Headers */,
-				D3C221D70FFE8C35004514FE /* PKSymbolState.h in Headers */,
-				D3C221DA0FFE8C3D004514FE /* PKWordState.h in Headers */,
-				D3C221DD0FFE8C43004514FE /* PKWhitespaceState.h in Headers */,
-				D3C221E00FFE8C49004514FE /* PKDelimitState.h in Headers */,
-				D3C221E30FFE8C4E004514FE /* PKCommentState.h in Headers */,
-				D3C221E60FFE8C56004514FE /* PKSingleLineCommentState.h in Headers */,
-				D3C221E90FFE8C60004514FE /* PKMultiLineCommentState.h in Headers */,
-				D3C221EC0FFE8C69004514FE /* PKSymbolNode.h in Headers */,
-				D3C221EF0FFE8C6F004514FE /* PKSymbolRootNode.h in Headers */,
-				D3C221F20FFE8C7A004514FE /* PKPattern.h in Headers */,
-				D3C221F50FFE8C87004514FE /* PKWord.h in Headers */,
-				D3C221FB0FFE8C97004514FE /* PKQuotedString.h in Headers */,
-				D3C221FE0FFE8CB2004514FE /* PKSymbol.h in Headers */,
-				D3C222010FFE8CB9004514FE /* PKLiteral.h in Headers */,
-				D3C222040FFE8CC4004514FE /* PKCaseInsensitiveLiteral.h in Headers */,
-				D3C222070FFE8CCA004514FE /* PKWhitespace.h in Headers */,
-				D3C2220A0FFE8CD1004514FE /* PKComment.h in Headers */,
-				D3C2220D0FFE8CD8004514FE /* PKDelimitedString.h in Headers */,
-				D3C222100FFE8CDF004514FE /* PKAny.h in Headers */,
-				D3C222160FFE8D01004514FE /* PKLowercaseWord.h in Headers */,
-				D3C222190FFE8D11004514FE /* PKUppercaseWord.h in Headers */,
-				D3C2221C0FFE8D32004514FE /* PKCharacterAssembly.h in Headers */,
-				D3C2221F0FFE8D3B004514FE /* PKChar.h in Headers */,
-				D3C222220FFE8D42004514FE /* PKDigit.h in Headers */,
-				D3C222250FFE8D49004514FE /* PKLetter.h in Headers */,
-				D3C222280FFE8D6B004514FE /* PKSpecificChar.h in Headers */,
-				D3C2222B0FFE8DAC004514FE /* PKParserFactory.h in Headers */,
-				D3C2222F0FFE8DEF004514FE /* NSString+ParseKitAdditions.h in Headers */,
-				D3C222300FFE8DF3004514FE /* NSArray+ParseKitAdditions.h in Headers */,
-				D3F0E2490FFE8EB900C9DF74 /* PKQuoteState.h in Headers */,
-				D3F0E3CB0FFEB70100C9DF74 /* PKNumber.h in Headers */,
-				D37A28681013942A00E936B7 /* PKGrammarParser.h in Headers */,
-				D35F4A8F11643662003811F3 /* PKEmailState.h in Headers */,
-				D35F4A9011643662003811F3 /* PKURLState.h in Headers */,
-				D33DC1A011656952004CE58C /* PKTwitterState.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -2569,43 +2073,6 @@
 			productReference = 8DC2EF5B0486A6940098B216 /* ParseKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D334940F0E2963FD00406085 /* DemoApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D33494150E2963FE00406085 /* Build configuration list for PBXNativeTarget "DemoApp" */;
-			buildPhases = (
-				D334940D0E2963FD00406085 /* Sources */,
-				D334940C0E2963FD00406085 /* Resources */,
-				D334940E0E2963FD00406085 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D33494A00E296AA900406085 /* PBXTargetDependency */,
-			);
-			name = DemoApp;
-			productName = DemoApp;
-			productReference = D33494100E2963FD00406085 /* DemoApp.app */;
-			productType = "com.apple.product-type.application";
-		};
-		D34185030E520D3F0081B0DC /* DebugApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D34185090E520D410081B0DC /* Build configuration list for PBXNativeTarget "DebugApp" */;
-			buildPhases = (
-				D34185010E520D3F0081B0DC /* Sources */,
-				D34185000E520D3F0081B0DC /* Resources */,
-				D380B9A10F0EF3DC0009EC13 /* Copy Frameworks */,
-				D34185020E520D3F0081B0DC /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D34185100E520D6F0081B0DC /* PBXTargetDependency */,
-			);
-			name = DebugApp;
-			productName = TestApp;
-			productReference = D34185040E520D3F0081B0DC /* DebugApp.app */;
-			productType = "com.apple.product-type.application";
-		};
 		D37D8DC51571A4F700CDB822 /* Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D37D8DDC1571A4F700CDB822 /* Build configuration list for PBXNativeTarget "Tests" */;
@@ -2625,60 +2092,6 @@
 			productName = NewTests;
 			productReference = D37D8DC61571A4F700CDB822 /* Tests.octest */;
 			productType = "com.apple.product-type.bundle";
-		};
-		D389F1CD0F1965E600558235 /* JSParseKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D389F1D20F1965E800558235 /* Build configuration list for PBXNativeTarget "JSParseKit" */;
-			buildPhases = (
-				D389F1C90F1965E600558235 /* Headers */,
-				D389F1CB0F1965E600558235 /* Sources */,
-				D389F1CA0F1965E600558235 /* Resources */,
-				D389F1CC0F1965E600558235 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D389F1D40F19665C00558235 /* PBXTargetDependency */,
-			);
-			name = JSParseKit;
-			productName = TDJSParseKit;
-			productReference = D389F1CE0F1965E600558235 /* JSParseKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D389F2020F196A7500558235 /* JSDemoApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D389F2080F196A7600558235 /* Build configuration list for PBXNativeTarget "JSDemoApp" */;
-			buildPhases = (
-				D389F2000F196A7500558235 /* Sources */,
-				D389F1FF0F196A7500558235 /* Resources */,
-				D389F2010F196A7500558235 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D389F20A0F196A8000558235 /* PBXTargetDependency */,
-			);
-			name = JSDemoApp;
-			productName = JSDemoApp;
-			productReference = D389F2030F196A7500558235 /* JSDemoApp.app */;
-			productType = "com.apple.product-type.application";
-		};
-		D3FDC5820FFC4BFC00F1F797 /* ParseKitMobile */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D3FDC62F0FFC4C2000F1F797 /* Build configuration list for PBXNativeTarget "ParseKitMobile" */;
-			buildPhases = (
-				D3FDC57F0FFC4BFC00F1F797 /* Headers */,
-				D3FDC5800FFC4BFC00F1F797 /* Sources */,
-				D3FDC5810FFC4BFC00F1F797 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ParseKitMobile;
-			productName = ParseKitMobile;
-			productReference = D3FDC5830FFC4BFC00F1F797 /* libparsekit.a */;
-			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -2705,12 +2118,7 @@
 			projectRoot = "";
 			targets = (
 				8DC2EF4F0486A6940098B216 /* ParseKit */,
-				D389F1CD0F1965E600558235 /* JSParseKit */,
-				D3FDC5820FFC4BFC00F1F797 /* ParseKitMobile */,
 				D37D8DC51571A4F700CDB822 /* Tests */,
-				D334940F0E2963FD00406085 /* DemoApp */,
-				D34185030E520D3F0081B0DC /* DebugApp */,
-				D389F2020F196A7500558235 /* JSDemoApp */,
 			);
 		};
 /* End PBXProject section */
@@ -2721,57 +2129,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D334940C0E2963FD00406085 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D36E98F80E58C1A000496BD3 /* DemoAppMainMenu.xib in Resources */,
-				D3DCB4C40EF6015C00DE5110 /* json.grammar in Resources */,
-				D3F741BF0EF9F29400559B9F /* css2_1.grammar in Resources */,
-				D3D01CAB0EFDB8A000C24DDE /* json_with_discards.grammar in Resources */,
-				D3F562A210266E5300DD6DB1 /* TokensView.xib in Resources */,
-				D3F562A410266E6300DD6DB1 /* TreesView.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D34185000E520D3F0081B0DC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D3E27A320E741DD20078CC2C /* small-xml-file.xml in Resources */,
-				D3E27A330E741DD20078CC2C /* apple-boss.xml in Resources */,
-				D398E20E0E60F86D00A1C877 /* yahoo.json in Resources */,
-				D3E785560E53FB54008C7D61 /* apple-boss.json in Resources */,
-				D36E98E10E58C12800496BD3 /* DebugAppMainMenu.xib in Resources */,
-				D3EADD810E75E9CC00F78584 /* nasty.html in Resources */,
-				D3B69D320E80249900D70C41 /* nonascii.html in Resources */,
-				D3DCB4C50EF6015C00DE5110 /* json.grammar in Resources */,
-				D3F741C00EF9F29500559B9F /* css2_1.grammar in Resources */,
-				D3D01CAC0EFDB8A100C24DDE /* json_with_discards.grammar in Resources */,
-				D385FA260F04993500DB2946 /* json.css in Resources */,
-				D385FD6C0F05A99900DB2946 /* mini_css.grammar in Resources */,
-				D3DDDCAE0F0880D800A58000 /* example1.srgs in Resources */,
-				D383498C0F0C0CF30055E4E0 /* json_with_comments.grammar in Resources */,
-				D38349BD0F0C0D910055E4E0 /* json_with_comments.css in Resources */,
-				D3834A490F0C14C00055E4E0 /* yahoo_with_comments.json in Resources */,
-				D380AFBF0F0C54B60009EC13 /* html.css in Resources */,
-				D380AFC00F0C54B60009EC13 /* html.grammar in Resources */,
-				D380AFC30F0C56000009EC13 /* example.html in Resources */,
-				D380B3230F0CC0800009EC13 /* nyt.html in Resources */,
-				D380B50A0F0D71B00009EC13 /* css.grammar in Resources */,
-				D380B5390F0D7DE30009EC13 /* css.css in Resources */,
-				D380B5950F0D82F90009EC13 /* example.css in Resources */,
-				D3FD79210F4CC87900BAD816 /* rubyhash.grammar in Resources */,
-				D31A15270F6DE449002AFDF1 /* javascript.grammar in Resources */,
-				D355C6A70FE9F704006A91A4 /* nspredicate.grammar in Resources */,
-				D3BBBCC10FECD477007DF30D /* xml.grammar in Resources */,
-				D34BAC9A0FF8A9AD00D7773A /* xpath1_0.grammar in Resources */,
-				D3668293101D2C000008632C /* erb.grammar in Resources */,
-				D315DF730FEF59B600D876C8 /* date.grammar in Resources */,
-				D319E42B106D8A1F008C63DD /* arithmetic.grammar in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2814,24 +2171,6 @@
 				D37D8E551571A5A200CDB822 /* nasty.html in Resources */,
 				D37D8E561571A5A200CDB822 /* erb.grammar in Resources */,
 				D337F07E15D5AE7B00C83AED /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D389F1CA0F1965E600558235 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D389F1FF0F196A7500558235 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D389F38F0F19800400558235 /* DefaultValues.plist in Resources */,
-				D389F4620F198A8800558235 /* Test.html in Resources */,
-				D389F5590F19B7BC00558235 /* JSDemoAppMainMenu.xib in Resources */,
-				D389FBCD0F1B25E200558235 /* ParserTest.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2928,53 +2267,6 @@
 				D37F23221453841100A98014 /* PKHashtagState.m in Sources */,
 				D30805BA155ECB1F0000BC60 /* PKPattern.m in Sources */,
 				D30805BB155ECB220000BC60 /* RegexKitLite.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D334940D0E2963FD00406085 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D36E98E70E58C14000496BD3 /* DemoAppDelegate.m in Sources */,
-				D36E98E80E58C14000496BD3 /* main.m in Sources */,
-				D3F5629A10266CFC00DD6DB1 /* PKParseTreeView.m in Sources */,
-				D3F562A010266DFB00DD6DB1 /* DemoTokensViewController.m in Sources */,
-				D3F562A710266E8D00DD6DB1 /* DemoTreesViewController.m in Sources */,
-				D3305C4F102F5BAE00DC4F75 /* TDGutterView.m in Sources */,
-				D3305C50102F5BAE00DC4F75 /* TDSourceCodeTextView.m in Sources */,
-				D36934721038E28300527AF3 /* PKParseTree.m in Sources */,
-				D36934731038E28700527AF3 /* PKParseTreeAssembler.m in Sources */,
-				D36934741038E28B00527AF3 /* PKRuleNode.m in Sources */,
-				D36934751038E28F00527AF3 /* PKTokenNode.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D34185010E520D3F0081B0DC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D36E98E20E58C12800496BD3 /* main.m in Sources */,
-				D36E98E00E58C12800496BD3 /* DebugAppDelegate.m in Sources */,
-				D3EADD8F0E75EAA400F78584 /* TDHtmlSyntaxHighlighter.m in Sources */,
-				D31FE7420E60F40900A0803E /* XPathContext.m in Sources */,
-				D31FE7400E60F40300A0803E /* XPathAssembler.m in Sources */,
-				D31FE7340E60F34600A0803E /* XPathParser.m in Sources */,
-				D31FE7330E60F33C00A0803E /* XMLReader.m in Sources */,
-				D31FE7320E60F33000A0803E /* EBNFParser.m in Sources */,
-				D31FE7300E60F31E00A0803E /* TDFastJsonParser.m in Sources */,
-				D302C69D0EF044810090E714 /* TDPlistParser.m in Sources */,
-				D3F740B70EF8C38A00559B9F /* JSONAssembler.m in Sources */,
-				D385F98C0F046FE900DB2946 /* TDGenericAssembler.m in Sources */,
-				D385FD440F05A88C00DB2946 /* TDMiniCSSAssembler.m in Sources */,
-				D3DDDA870F0779FD00A58000 /* TDSyntaxHighlighter.m in Sources */,
-				D389F5B80F19C76A00558235 /* TDJsonParser.m in Sources */,
-				D31A16530F7038C2002AFDF1 /* TDJavaScriptParser.m in Sources */,
-				D3252F7E0FCE1A87005EF059 /* TDNSPredicateBuilder.m in Sources */,
-				D3385FDA0FCFB1FF003BF729 /* TDPredicateEvaluator.m in Sources */,
-				D355C62E0FE9EFD6006A91A4 /* TDNSPredicateEvaluator.m in Sources */,
-				D3BBBC9D0FEC9756007DF30D /* TDXMLParser.m in Sources */,
-				D3376D8F10096C0700E4602E /* PKAST.m in Sources */,
-				D319E42F106D8A31008C63DD /* TDArithmeticAssembler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3102,149 +2394,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D389F1CB0F1965E600558235 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D34BB0690FF9EDDF00D7773A /* JSParseKit.m in Sources */,
-				D34BB0720FF9EE4000D7773A /* PKJSAssembly.m in Sources */,
-				D34BB0740FF9EE4000D7773A /* PKJSUtils.m in Sources */,
-				D34BB0770FF9EE4000D7773A /* PKJSValueHolder.m in Sources */,
-				D34BB0900FF9EF9D00D7773A /* PKJSCharacterAssembly.m in Sources */,
-				D34BB0AA0FF9F14B00D7773A /* PKJSCommentState.m in Sources */,
-				D34BB0AC0FF9F14B00D7773A /* PKJSDelimitState.m in Sources */,
-				D34BB0AE0FF9F14B00D7773A /* PKJSNumberState.m in Sources */,
-				D34BB0B00FF9F14B00D7773A /* PKJSQuoteState.m in Sources */,
-				D34BB0B20FF9F14B00D7773A /* PKJSSymbolState.m in Sources */,
-				D34BB0B40FF9F14B00D7773A /* PKJSToken.m in Sources */,
-				D34BB0B60FF9F14B00D7773A /* PKJSTokenAssembly.m in Sources */,
-				D34BB0B80FF9F14B00D7773A /* PKJSTokenizer.m in Sources */,
-				D34BB0BA0FF9F14B00D7773A /* PKJSTokenizerState.m in Sources */,
-				D34BB0BC0FF9F14B00D7773A /* PKJSWhitespaceState.m in Sources */,
-				D34BB0BE0FF9F14B00D7773A /* PKJSWordState.m in Sources */,
-				D34BB0E70FF9F28000D7773A /* PKJSAlternation.m in Sources */,
-				D34BB0E90FF9F28000D7773A /* PKJSAny.m in Sources */,
-				D34BB0EB0FF9F28000D7773A /* PKJSAssemblerAdapter.m in Sources */,
-				D34BB0ED0FF9F28000D7773A /* PKJSCollectionParser.m in Sources */,
-				D34BB0EF0FF9F28000D7773A /* PKJSEmpty.m in Sources */,
-				D34BB0F10FF9F28000D7773A /* PKJSParser.m in Sources */,
-				D34BB0F30FF9F28000D7773A /* PKJSRepetition.m in Sources */,
-				D34BB0F50FF9F28000D7773A /* PKJSSequence.m in Sources */,
-				D34BB0F70FF9F28000D7773A /* PKJSTerminal.m in Sources */,
-				D34BB0F90FF9F28000D7773A /* PKJSTrack.m in Sources */,
-				D34BB1150FF9F36200D7773A /* PKJSCaseInsensitiveLiteral.m in Sources */,
-				D34BB1170FF9F36200D7773A /* PKJSComment.m in Sources */,
-				D34BB1190FF9F36200D7773A /* PKJSDelimitedString.m in Sources */,
-				D34BB11B0FF9F36200D7773A /* PKJSLiteral.m in Sources */,
-				D34BB11D0FF9F36200D7773A /* PKJSLowercaseWord.m in Sources */,
-				D34BB11F0FF9F36200D7773A /* PKJSNum.m in Sources */,
-				D34BB1210FF9F36200D7773A /* PKJSPattern.m in Sources */,
-				D34BB1230FF9F36200D7773A /* PKJSQuotedString.m in Sources */,
-				D34BB1250FF9F36200D7773A /* PKJSSymbol.m in Sources */,
-				D34BB1270FF9F36200D7773A /* PKJSUppercaseWord.m in Sources */,
-				D34BB1290FF9F36200D7773A /* PKJSWord.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D389F2000F196A7500558235 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D389F2E40F196CAE00558235 /* main.m in Sources */,
-				D389F37A0F197E8000558235 /* JSDemoAppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D3FDC5800FFC4BFC00F1F797 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D3FDC6EE0FFC4C9E00F1F797 /* RegexKitLite.m in Sources */,
-				D3FDC6EF0FFC4C9E00F1F797 /* PKReader.m in Sources */,
-				D3FDC6F00FFC4C9E00F1F797 /* PKAssembly.m in Sources */,
-				D3FDC6F10FFC4C9E00F1F797 /* PKParser.m in Sources */,
-				D3FDC6F20FFC4C9E00F1F797 /* PKRepetition.m in Sources */,
-				D3FDC6F30FFC4C9E00F1F797 /* PKCollectionParser.m in Sources */,
-				D3FDC6F40FFC4C9E00F1F797 /* PKAlternation.m in Sources */,
-				D3FDC6F50FFC4C9E00F1F797 /* PKSequence.m in Sources */,
-				D3FDC6F60FFC4C9E00F1F797 /* PKTrack.m in Sources */,
-				D3FDC6F70FFC4C9E00F1F797 /* PKTrackException.m in Sources */,
-				D3FDC6F80FFC4C9E00F1F797 /* PKDifference.m in Sources */,
-				D3FDC6F90FFC4C9E00F1F797 /* PKIntersection.m in Sources */,
-				D3FDC6FA0FFC4C9E00F1F797 /* PKTerminal.m in Sources */,
-				D3FDC6FB0FFC4C9E00F1F797 /* PKEmpty.m in Sources */,
-				D3FDC6FC0FFC4C9E00F1F797 /* PKTokenAssembly.m in Sources */,
-				D3FDC6FD0FFC4C9E00F1F797 /* PKToken.m in Sources */,
-				D3FDC6FE0FFC4C9E00F1F797 /* PKTokenArraySource.m in Sources */,
-				D3FDC6FF0FFC4C9E00F1F797 /* PKTokenizer.m in Sources */,
-				D3FDC7000FFC4C9E00F1F797 /* PKTokenizerState.m in Sources */,
-				D3FDC7010FFC4C9E00F1F797 /* PKNumberState.m in Sources */,
-				D3FDC7020FFC4C9E00F1F797 /* PKQuoteState.m in Sources */,
-				D3FDC7030FFC4C9E00F1F797 /* PKSymbolState.m in Sources */,
-				D3FDC7040FFC4C9E00F1F797 /* PKWordState.m in Sources */,
-				D3FDC7050FFC4C9E00F1F797 /* PKWhitespaceState.m in Sources */,
-				D3FDC7060FFC4C9E00F1F797 /* PKDelimitState.m in Sources */,
-				D3FDC7070FFC4C9E00F1F797 /* PKCommentState.m in Sources */,
-				D3FDC7080FFC4C9E00F1F797 /* PKSingleLineCommentState.m in Sources */,
-				D3FDC7090FFC4C9E00F1F797 /* PKMultiLineCommentState.m in Sources */,
-				D3FDC70A0FFC4C9E00F1F797 /* PKSymbolNode.m in Sources */,
-				D3FDC70B0FFC4C9E00F1F797 /* PKSymbolRootNode.m in Sources */,
-				D3FDC70C0FFC4C9E00F1F797 /* PKPattern.m in Sources */,
-				D3FDC70D0FFC4C9E00F1F797 /* PKWord.m in Sources */,
-				D3FDC70F0FFC4C9E00F1F797 /* PKQuotedString.m in Sources */,
-				D3FDC7100FFC4C9E00F1F797 /* PKSymbol.m in Sources */,
-				D3FDC7110FFC4C9E00F1F797 /* PKLiteral.m in Sources */,
-				D3FDC7120FFC4C9E00F1F797 /* PKCaseInsensitiveLiteral.m in Sources */,
-				D3FDC7130FFC4C9E00F1F797 /* PKWhitespace.m in Sources */,
-				D3FDC7140FFC4C9E00F1F797 /* PKComment.m in Sources */,
-				D3FDC7150FFC4C9E00F1F797 /* PKDelimitedString.m in Sources */,
-				D3FDC7160FFC4C9E00F1F797 /* PKAny.m in Sources */,
-				D3FDC7180FFC4C9E00F1F797 /* PKLowercaseWord.m in Sources */,
-				D3FDC7190FFC4C9E00F1F797 /* PKUppercaseWord.m in Sources */,
-				D3FDC71A0FFC4C9E00F1F797 /* PKCharacterAssembly.m in Sources */,
-				D3FDC71B0FFC4C9E00F1F797 /* PKChar.m in Sources */,
-				D3FDC71C0FFC4C9E00F1F797 /* PKDigit.m in Sources */,
-				D3FDC71D0FFC4C9E00F1F797 /* PKLetter.m in Sources */,
-				D3FDC71E0FFC4C9E00F1F797 /* PKSpecificChar.m in Sources */,
-				D3FDC71F0FFC4C9E00F1F797 /* PKParserFactory.m in Sources */,
-				D3FDC7200FFC4C9E00F1F797 /* NSArray+ParseKitAdditions.m in Sources */,
-				D3FDC7210FFC4C9E00F1F797 /* NSString+ParseKitAdditions.m in Sources */,
-				D3126DEC0FFDBC1D00CBF4C4 /* PKNegation.m in Sources */,
-				D3F0E3CC0FFEB70700C9DF74 /* PKNumber.m in Sources */,
-				D37A28671013942300E936B7 /* PKGrammarParser.m in Sources */,
-				D35F4A8911643630003811F3 /* PKEmailState.m in Sources */,
-				D35F4A8A11643630003811F3 /* PKURLState.m in Sources */,
-				D33DC1991165634F004CE58C /* PKTwitterState.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D33494A00E296AA900406085 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8DC2EF4F0486A6940098B216 /* ParseKit */;
-			targetProxy = D334949F0E296AA900406085 /* PBXContainerItemProxy */;
-		};
-		D34185100E520D6F0081B0DC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8DC2EF4F0486A6940098B216 /* ParseKit */;
-			targetProxy = D341850F0E520D6F0081B0DC /* PBXContainerItemProxy */;
-		};
 		D37D8E581571A5A900CDB822 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8DC2EF4F0486A6940098B216 /* ParseKit */;
 			targetProxy = D37D8E571571A5A900CDB822 /* PBXContainerItemProxy */;
-		};
-		D389F1D40F19665C00558235 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8DC2EF4F0486A6940098B216 /* ParseKit */;
-			targetProxy = D389F1D30F19665C00558235 /* PBXContainerItemProxy */;
-		};
-		D389F20A0F196A8000558235 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D389F1CD0F1965E600558235 /* JSParseKit */;
-			targetProxy = D389F2090F196A8000558235 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -3354,118 +2510,6 @@
 			};
 			name = Release;
 		};
-		D33494130E2963FE00406085 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "demoapp/DemoApp-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PRODUCT_NAME = DemoApp;
-				WRAPPER_EXTENSION = app;
-				ZERO_LINK = YES;
-			};
-			name = Debug;
-		};
-		D33494140E2963FE00406085 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "demoapp/DemoApp-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PRODUCT_NAME = DemoApp;
-				WRAPPER_EXTENSION = app;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
-		D34185070E520D410081B0DC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/frameworks\"";
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_GC = unsupported;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				GCC_WARN_UNUSED_VARIABLE = NO;
-				HEADER_SEARCH_PATHS = "$(LIBXML_PATH)";
-				INFOPLIST_FILE = "debugapp/DebugApp-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
-				LIBXML_PATH = "\"/usr/include/libxml2/\"";
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PRODUCT_NAME = DebugApp;
-			};
-			name = Debug;
-		};
-		D34185080E520D410081B0DC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
-				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/frameworks\"";
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				HEADER_SEARCH_PATHS = "$(LIBXML_PATH)";
-				INFOPLIST_FILE = "debugapp/DebugApp-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
-				LIBXML_PATH = "\"/usr/include/libxml2/\"";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PRODUCT_NAME = DebugApp;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
 		D37D8DDA1571A4F700CDB822 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3527,147 +2571,6 @@
 			};
 			name = Release;
 		};
-		D389F1D00F1965E800558235 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_GC = supported;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "JSParseKit-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PRODUCT_NAME = JSParseKit;
-			};
-			name = Debug;
-		};
-		D389F1D10F1965E800558235 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
-				GCC_ENABLE_OBJC_GC = supported;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "JSParseKit-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PRODUCT_NAME = JSParseKit;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
-		D389F2060F196A7600558235 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_GC = required;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "jsdemoapp/JSDemoApp-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PRODUCT_NAME = JSDemoApp;
-			};
-			name = Debug;
-		};
-		D389F2070F196A7600558235 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_OBJC_GC = required;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "jsdemoapp/JSDemoApp-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PRODUCT_NAME = JSDemoApp;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
-		D3FDC5840FFC4BFC00F1F797 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = ParseKitMobile_Prefix.pch;
-				HEADER_SEARCH_PATHS = "";
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = parsekit;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		D3FDC5850FFC4BFC00F1F797 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				EXECUTABLE_PREFIX = "";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = ParseKitMobile_Prefix.pch;
-				HEADER_SEARCH_PATHS = "";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = parsekit;
-				SDKROOT = iphoneos;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -3689,56 +2592,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		D33494150E2963FE00406085 /* Build configuration list for PBXNativeTarget "DemoApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D33494130E2963FE00406085 /* Debug */,
-				D33494140E2963FE00406085 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		D34185090E520D410081B0DC /* Build configuration list for PBXNativeTarget "DebugApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D34185070E520D410081B0DC /* Debug */,
-				D34185080E520D410081B0DC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
 		D37D8DDC1571A4F700CDB822 /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D37D8DDA1571A4F700CDB822 /* Debug */,
 				D37D8DDB1571A4F700CDB822 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		D389F1D20F1965E800558235 /* Build configuration list for PBXNativeTarget "JSParseKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D389F1D00F1965E800558235 /* Debug */,
-				D389F1D10F1965E800558235 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		D389F2080F196A7600558235 /* Build configuration list for PBXNativeTarget "JSDemoApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D389F2060F196A7600558235 /* Debug */,
-				D389F2070F196A7600558235 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		D3FDC62F0FFC4C2000F1F797 /* Build configuration list for PBXNativeTarget "ParseKitMobile" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D3FDC5840FFC4BFC00F1F797 /* Debug */,
-				D3FDC5850FFC4BFC00F1F797 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
