@@ -26,26 +26,21 @@ static PKTokenEOF *EOFToken = nil;
 
 + (PKTokenEOF *)instance {
     @synchronized(self) {
-        if (!EOFToken) {
-            EOFToken = [[self alloc] init];
+        if (!EOFToken) { 
+            EOFToken = [[self alloc] initWithTokenType:PKTokenTypeEOF stringValue:nil floatValue:0.0];
         }
     }
     return EOFToken;
 }
 
 
-- (NSString *)description {
-    return [NSString stringWithFormat:@"<PKTokenEOF %p>", self];
+- (NSString *)stringValue {
+    return @"«EOF»";
 }
 
 
 - (NSString *)debugDescription {
     return [self description];
-}
-
-
-- (NSUInteger)offset {
-    return NSNotFound;
 }
 
 @end
@@ -62,6 +57,10 @@ static PKTokenEOF *EOFToken = nil;
 @property (nonatomic, readwrite, getter=isDelimitedString) BOOL delimitedString;
 @property (nonatomic, readwrite, getter=isURL) BOOL URL;
 @property (nonatomic, readwrite, getter=isEmail) BOOL email;
+<<<<<<< HEAD
+=======
+#if PK_PLATFORM_TWITTER_STATE
+>>>>>>> 07164941754bfd4a830de810fb1b1aca7a899165
 @property (nonatomic, readwrite, getter=isTwitter) BOOL twitter;
 @property (nonatomic, readwrite, getter=isHashtag) BOOL hashtag;
 
@@ -71,6 +70,7 @@ static PKTokenEOF *EOFToken = nil;
 @property (nonatomic, readwrite, copy) id value;
 
 @property (nonatomic, readwrite) NSUInteger offset;
+@property (nonatomic, readwrite) NSUInteger lineNumber;
 @end
 
 @implementation PKToken
@@ -88,10 +88,13 @@ static PKTokenEOF *EOFToken = nil;
 // designated initializer
 - (id)initWithTokenType:(PKTokenType)t stringValue:(NSString *)s floatValue:(PKFloat)n {
     //NSParameterAssert(s);
-    if (self = [super init]) {
+    self = [super init];
+    if (self) {
         self.tokenType = t;
         self.stringValue = s;
         self.floatValue = n;
+        self.offset = NSNotFound;
+        self.lineNumber = NSNotFound;
         
         self.number = (PKTokenTypeNumber == t);
         self.quotedString = (PKTokenTypeQuotedString == t);
@@ -102,6 +105,10 @@ static PKTokenEOF *EOFToken = nil;
         self.delimitedString = (PKTokenTypeDelimitedString == t);
         self.URL = (PKTokenTypeURL == t);
         self.email = (PKTokenTypeEmail == t);
+<<<<<<< HEAD
+=======
+#if PK_PLATFORM_TWITTER_STATE
+>>>>>>> 07164941754bfd4a830de810fb1b1aca7a899165
         self.twitter = (PKTokenTypeTwitter == t);
         self.hashtag = (PKTokenTypeHashtag == t);
     }
@@ -162,7 +169,7 @@ static PKTokenEOF *EOFToken = nil;
     if (!value) {
         id v = nil;
         if (number) {
-            v = [NSNumber numberWithFloat:floatValue];
+            v = [NSNumber numberWithDouble:floatValue];
         } else {
             v = stringValue;
         }
@@ -197,6 +204,10 @@ static PKTokenEOF *EOFToken = nil;
         typeString = @"URL";
     } else if (self.isEmail) {
         typeString = @"Email";
+<<<<<<< HEAD
+=======
+#if PK_PLATFORM_TWITTER_STATE
+>>>>>>> 07164941754bfd4a830de810fb1b1aca7a899165
     } else if (self.isTwitter) {
         typeString = @"Twitter";
     } else if (self.isHashtag) {
@@ -219,11 +230,17 @@ static PKTokenEOF *EOFToken = nil;
 @synthesize delimitedString;
 @synthesize URL;
 @synthesize email;
+<<<<<<< HEAD
+=======
+#if PK_PLATFORM_TWITTER_STATE
+>>>>>>> 07164941754bfd4a830de810fb1b1aca7a899165
 @synthesize twitter;
 @synthesize hashtag;
 @synthesize floatValue;
 @synthesize stringValue;
 @synthesize tokenType;
+@synthesize tokenKind;
 @synthesize value;
 @synthesize offset;
+@synthesize lineNumber;
 @end

@@ -5,6 +5,11 @@
 //  Created by Todd Ditchendorf on 4/1/10.
 //  Copyright 2010 Todd Ditchendorf. All rights reserved.
 //
+<<<<<<< HEAD
+=======
+
+#if PK_PLATFORM_TWITTER_STATE
+>>>>>>> 07164941754bfd4a830de810fb1b1aca7a899165
 #import <ParseKit/PKTwitterState.h>
 #import <ParseKit/PKReader.h>
 #import <ParseKit/PKTokenizer.h>
@@ -29,7 +34,8 @@
 @implementation PKTwitterState
 
 - (id)init {
-    if (self = [super init]) {
+    self = [super init];
+    if (self) {
 
     }
     return self;

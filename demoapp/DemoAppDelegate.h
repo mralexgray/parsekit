@@ -16,14 +16,12 @@
 
 @class DemoTokensViewController;
 @class DemoTreesViewController;
+@class DemoASTViewController;
 
-@interface DemoAppDelegate : NSObject {
-    IBOutlet NSTabView *tabView;
-    
-    DemoTokensViewController *tokensViewController;
-    DemoTreesViewController *treesViewController;
-}
+@interface DemoAppDelegate : NSObject
 
+@property (nonatomic, retain) IBOutlet NSTabView *tabView;
 @property (nonatomic, retain) DemoTokensViewController *tokensViewController;
 @property (nonatomic, retain) DemoTreesViewController *treesViewController;
+@property (nonatomic, retain) DemoASTViewController *ASTViewController;
 @end

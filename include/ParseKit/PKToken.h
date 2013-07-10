@@ -28,7 +28,8 @@
     @var        PKTokenTypeDelimtedString A constant indicating that a token is a delimitedString, like <tt><#foo></tt>.
 */
 typedef enum {
-    PKTokenTypeEOF,
+    PKTokenTypeEOF = -1,
+    PKTokenTypeInvalid = 0,
     PKTokenTypeNumber,
     PKTokenTypeQuotedString,
     PKTokenTypeSymbol,
@@ -39,6 +40,10 @@ typedef enum {
     PKTokenTypeAny,
     PKTokenTypeURL,
     PKTokenTypeEmail,
+<<<<<<< HEAD
+=======
+#if PK_PLATFORM_TWITTER_STATE
+>>>>>>> 07164941754bfd4a830de810fb1b1aca7a899165
     PKTokenTypeTwitter,
     PKTokenTypeHashtag,
 } PKTokenType;
@@ -52,6 +57,7 @@ typedef enum {
     PKFloat floatValue;
     NSString *stringValue;
     PKTokenType tokenType;
+    NSInteger tokenKind;
     
     BOOL number;
     BOOL quotedString;
@@ -62,11 +68,16 @@ typedef enum {
     BOOL delimitedString;
     BOOL URL;
     BOOL email;
+<<<<<<< HEAD
+=======
+#if PK_PLATFORM_TWITTER_STATE
+>>>>>>> 07164941754bfd4a830de810fb1b1aca7a899165
     BOOL twitter;
     BOOL hashtag;
     
     id value;
     NSUInteger offset;
+    NSUInteger lineNumber;
 }
 
 /*!
@@ -161,7 +172,11 @@ typedef enum {
 */
 @property (nonatomic, readonly, getter=isEmail) BOOL email;
 
+<<<<<<< HEAD
 
+=======
+#if PK_PLATFORM_TWITTER_STATE
+>>>>>>> 07164941754bfd4a830de810fb1b1aca7a899165
 /*!
     @property   twitter
     @brief      True if this token is an twitter handle. getter=isTwitter
@@ -210,4 +225,16 @@ typedef enum {
     @brief      The character offset of this token in the original source string.
 */
 @property (nonatomic, readonly) NSUInteger offset;
+
+/*!
+    @property   lineNumber
+    @brief      The line number of this token in the original source string.
+*/
+@property (nonatomic, readonly) NSUInteger lineNumber;
+
+/*!
+    @property   tokenKind
+    @brief      The kind of this token.
+*/
+@property (nonatomic) NSInteger tokenKind;
 @end

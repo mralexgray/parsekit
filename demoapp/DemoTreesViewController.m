@@ -21,9 +21,12 @@
 #import "PKParseTreeAssembler.h"
 #import <ParseKit/ParseKit.h>
 
-@interface DemoTreesViewController ()
-- (void)renderGutters;
-@end
+#import "JavaScriptSyntaxParser.h"
+#import "ExpressionSyntaxParser.h"
+#import "PKSParseTreeAssembler.h"
+
+#define PKAssertMainThread() NSAssert1([NSThread isMainThread], @"%s should be called on the main thread only.", __PRETTY_FUNCTION__);
+#define PKAssertNotMainThread() NSAssert1(![NSThread isMainThread], @"%s should be called on the main thread only.", __PRETTY_FUNCTION__);
 
 @implementation DemoTreesViewController
 
@@ -32,132 +35,68 @@
 }
 
 
-- (id)initWithNibName:(NSString *)name bundle:(NSBundle *)b {
-    if (self = [super initWithNibName:name bundle:b]) {
-        
-    }
-    return self;
-}
-
-
 - (void)dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-    self.grammarString = nil;
-    self.inString = nil;
+    self.parseTreeView = nil;
     [super dealloc];
 }
 
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
 //    self.grammarString = @"@allowsScientificNotation=YES;\n@start = expr;\nexpr = addExpr;\naddExpr = multExpr (('+'|'-') multExpr)*;\nmultExpr = atom (('*'|'/') atom)*;\natom = Number;";
 //    self.grammarString = @"@start = array;array = '[' Number (commaNumber)* ']';commaNumber = ',' Number;";
 //    self.grammarString = @"@start = array;array = foo | Word; foo = 'foo';";
-    self.grammarString = @"@allowsScientificNotation = YES;     @start        = Empty | array | object;          object        = '{' (Empty | property (',' property)*) '}';     property      = name ':' value;     name  = QuotedString;          array         = '[' (Empty | value (',' value)*) ']';          value         = 'null' | boolean | array | object | number | string;          string        = QuotedString;     number        = Number;     boolean       = 'true' | 'false';";
+//    self.grammarString = @"@allowsScientificNotation = YES;     @start        = Empty | array | object;          object        = '{' (Empty | property (',' property)*) '}';     property      = name ':' value;     name  = QuotedString;          array         = '[' (Empty | value (',' value)*) ']';          value         = 'null' | boolean | array | object | number | string;          string        = QuotedString;     number        = Number;     boolean       = 'true' | 'false';";
     
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"expression" ofType:@"grammar"];
+    self.grammarString = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    
+//    self.grammarString =
+//    @"@start    = expr;\n"
+//    @"expr      = orExpr;\n"
+//    @"orExpr    = andExpr orTerm*;\n"
+//    @"orTerm    = 'or' andExpr;\n"
+//    @"andExpr   = atom andTerm*;\n"
+//    @"andTerm   = 'and' atom;\n"
+//    @"atom      = Word;\n";
+
+
 
 //    self.inString = @"4.0*.4 + 2e-12/-47 +3";
 //    self.inString = @"[1,2]";
 //    self.inString = @"foo";
-    self.inString = @"[42e-12, null,{'foo':false}]";
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowDidBecomeMain:) name:NSWindowDidBecomeMainNotification object:[[self view] window]];
-}
-
-
-- (void)windowDidBecomeMain:(NSNotification *)n {
-    [self renderGutters];
-}
-
-
-- (void)renderGutters {
-    [grammarTextView renderGutter];
-    [inputTextView renderGutter];
-}
-
-
-- (IBAction)parse:(id)sender {
-    if (![inString length] || ![grammarString length]) {
-        NSBeep();
-        return;
-    }
-    
-    self.busy = YES;
-    
-    [NSThread detachNewThreadSelector:@selector(doParse) toTarget:self withObject:nil];
+    self.inputString = @"bar('foo');";
+//    self.inputString = @"foo or bar";
 }
 
 
 - (void)doParse {
-    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    PKAssertNotMainThread();
+
+//    PKParseTreeAssembler *as = [[[PKParseTreeAssembler alloc] init] autorelease];
+//    PKParser *p = [[PKParserFactory factory] parserFromGrammar:self.grammarString assembler:as preassembler:as error:nil];
+//    PKParseTree *tr = [p parse:self.inputString error:nil];
+
+
+//    PKSParser *p = [[[ExpressionSyntaxParser alloc] init] autorelease];
+    PKSParser *p = [[[JavaScriptSyntaxParser alloc] init] autorelease];
+    PKSParseTreeAssembler *ass = [[[PKSParseTreeAssembler alloc] init] autorelease];
     
-    PKParseTreeAssembler *as = [[[PKParseTreeAssembler alloc] init] autorelease];
-    PKParser *p = [[PKParserFactory factory] parserFromGrammar:grammarString assembler:as preassembler:as error:nil];
-    PKParseTree *tr = [p parse:inString error:nil];
-    [parseTreeView drawParseTree:tr];
+    [p parseString:self.inputString assembler:ass error:nil];
     
-    // release
-    PKReleaseSubparserTree(p);
-
-    [self performSelectorOnMainThread:@selector(done) withObject:nil waitUntilDone:NO];
+    PKParseTree *tr = ass.root;
     
-    [pool drain];
-}
-
-
-- (void)done {
-    self.busy = NO;
-}    
-
-
-#pragma mark -
-#pragma mark NSSplitViewDelegate
-
-- (BOOL)splitView:(NSSplitView *)sv canCollapseSubview:(NSView *)v {
-    return v == [[sv subviews] objectAtIndex:1];
-}
-
-
-- (BOOL)splitView:(NSSplitView *)sv shouldCollapseSubview:(NSView *)v forDoubleClickOnDividerAtIndex:(NSInteger)i {
-    return [self splitView:sv canCollapseSubview:v];
-}
-
-
-
-// maintain constant splitview width when resizing window
-- (void)splitView:(NSSplitView *)sv resizeSubviewsWithOldSize:(NSSize)oldSize {    
-    NSRect newFrame = [sv frame]; // get the new size of the whole splitView
-    NSView *top = [[sv subviews] objectAtIndex:0];
-    NSRect topFrame = [top frame];
-    NSView *bottom = [[sv subviews] objectAtIndex:1];
-    NSRect bottomFrame = [bottom frame];
-    
-    CGFloat dividerThickness = [sv dividerThickness];
-    topFrame.size.width = newFrame.size.width;
-    
-    bottomFrame.size.height = newFrame.size.height - topFrame.size.height - dividerThickness;
-    bottomFrame.size.width = newFrame.size.width;
-    topFrame.origin.y = 0;
-    
-    [top setFrame:topFrame];
-    [bottom setFrame:bottomFrame];
-}
-
-
-- (CGFloat)splitView:(NSSplitView *)sv constrainMinCoordinate:(CGFloat)proposedMin ofSubviewAt:(NSInteger)i {
-    if (0 == i) {
-        return 200;
-    } else {
-        return proposedMin;
+    if ([tr isKindOfClass:[PKParseTree class]]) {
+        [_parseTreeView drawParseTree:tr];
     }
+    
+//    // release
+//    PKReleaseSubparserTree(p);
+
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self done];
+    });
 }
 
-
-- (CGFloat)splitView:(NSSplitView *)sv constrainMaxCoordinate:(CGFloat)proposedMax ofSubviewAt:(NSInteger)i {
-    return proposedMax;
-}
-
-@synthesize grammarString;
-@synthesize inString;
-@synthesize busy;
 @end
 

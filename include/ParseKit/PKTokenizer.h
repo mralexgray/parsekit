@@ -15,6 +15,7 @@
 #import <Foundation/Foundation.h>
 #import <ParseKit/PKTypes.h>
 
+@class PKTokenizer;
 @class PKToken;
 @class PKTokenizerState;
 @class PKNumberState;
@@ -25,10 +26,21 @@
 @class PKWordState;
 @class PKDelimitState;
 @class PKURLState;
+<<<<<<< HEAD
 @class PKEmailState;
+=======
+#if PK_PLATFORM_EMAIL_STATE
+@class PKEmailState;
+#endif
+#if PK_PLATFORM_TWITTER_STATE
+>>>>>>> 07164941754bfd4a830de810fb1b1aca7a899165
 @class PKTwitterState;
 @class PKHashtagState;
 @class PKReader;
+
+@protocol PKTokenizerDelegate <NSObject>
+- (NSInteger)tokenizer:(PKTokenizer *)t tokenKindForStringValue:(NSString *)str;
+@end
 
 /*!
     @class      PKTokenizer
@@ -54,8 +66,9 @@
 @endcode
                 <p>In addition to allowing modification of the state table, this class makes each of the states above available. Some of these states are customizable. For example, wordState allows customization of what characters can be part of a word, after the first character.</p>
 */
-@interface PKTokenizer : NSObject {
+@interface PKTokenizer : NSObject <NSFastEnumeration> {
     NSString *string;
+    NSInputStream *stream;
     PKReader *reader;
     
     NSMutableArray *tokenizerStates;
@@ -68,9 +81,22 @@
     PKWordState *wordState;
     PKDelimitState *delimitState;
     PKURLState *URLState;
+<<<<<<< HEAD
     PKEmailState *emailState;
     PKTwitterState *twitterState;
     PKHashtagState *hashtagState;
+=======
+#if PK_PLATFORM_EMAIL_STATE
+    PKEmailState *emailState;
+#endif
+#if PK_PLATFORM_TWITTER_STATE
+    PKTwitterState *twitterState;
+    PKHashtagState *hashtagState;
+#endif
+    
+    NSUInteger lineNumber;
+    id <PKTokenizerDelegate>delegate;
+>>>>>>> 07164941754bfd4a830de810fb1b1aca7a899165
 }
 
 /*!
@@ -85,6 +111,7 @@
     @result     An autoreleased initialized tokenizer.
 */
 + (PKTokenizer *)tokenizerWithString:(NSString *)s;
++ (PKTokenizer *)tokenizerWithStream:(NSInputStream *)s;
 
 /*!
     @brief      Designated Initializer. Constructs a tokenizer to read from the supplied string.
@@ -92,6 +119,7 @@
     @result     An initialized tokenizer.
 */
 - (id)initWithString:(NSString *)s;
+- (id)initWithStream:(NSInputStream *)s;
 
 /*!
     @brief      Returns the next token.
@@ -118,7 +146,8 @@
     @property   string
     @brief      The string to read from.
 */
-@property (nonatomic, retain) NSString *string;
+@property (nonatomic, copy) NSString *string;
+@property (nonatomic, retain) NSInputStream *stream;
 
 /*!
     @property    numberState
@@ -163,8 +192,21 @@
 @property (nonatomic, retain) PKDelimitState *delimitState;
 
 @property (nonatomic, retain) PKURLState *URLState;
+<<<<<<< HEAD
 @property (nonatomic, retain) PKEmailState *emailState;
 @property (nonatomic, retain) PKTwitterState *twitterState;
 @property (nonatomic, retain) PKHashtagState *hashtagState;
 
+=======
+#if PK_PLATFORM_EMAIL_STATE
+@property (nonatomic, retain) PKEmailState *emailState;
+#endif
+#if PK_PLATFORM_TWITTER_STATE
+@property (nonatomic, retain) PKTwitterState *twitterState;
+@property (nonatomic, retain) PKHashtagState *hashtagState;
+#endif
+
+@property (nonatomic, readonly) NSUInteger lineNumber;
+@property (nonatomic, assign) id <PKTokenizerDelegate>delegate;
+>>>>>>> 07164941754bfd4a830de810fb1b1aca7a899165
 @end

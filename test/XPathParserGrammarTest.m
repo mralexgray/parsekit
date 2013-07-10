@@ -16,7 +16,7 @@
 
 @implementation XPathParserGrammarTest
 
-#if PLATFORM(TWITTER_STATE)
+#if PK_PLATFORM_TWITTER_STATE
 #else
 - (void)setUp {
     NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:@"xpath1_0" ofType:@"grammar"];
@@ -74,7 +74,7 @@
     t.string = @"//foo";
     a = [PKTokenAssembly assemblyWithTokenizer:t];
     res = [p bestMatchFor:a];
-    NSLog(@"\n\n res: %@ \n\n", res);
+//    NSLog(@"\n\n res: %@ \n\n", res);
     TDEqualObjects(@"[//, foo]///foo^", [res description]);
 }
 

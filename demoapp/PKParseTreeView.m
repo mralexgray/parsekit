@@ -22,6 +22,11 @@
 #define ROW_HEIGHT 50.0
 #define CELL_WIDTH 55.0
 
+#define LABEL_MARGIN_Y -2.0
+
+#define FUDGE 0.5
+#define PKAlign(x) (floor((x)) + FUDGE)
+
 @interface PKParseTreeView ()
 - (void)drawTree:(PKParseTree *)n atPoint:(NSPoint)p;
 - (void)drawParentNode:(PKParseTree *)n atPoint:(NSPoint)p;
@@ -30,15 +35,19 @@
 - (PKFloat)widthForNode:(PKParseTree *)n;
 - (PKFloat)depthForNode:(PKParseTree *)n;
 - (NSString *)labelFromNode:(PKParseTree *)n;
-- (void)drawLabel:(NSString *)label atPoint:(NSPoint)p;
+- (void)drawLabel:(NSString *)label atPoint:(NSPoint)p withAttrs:(NSDictionary *)attrs;
 @end
 
 @implementation PKParseTreeView
 
 - (id)initWithFrame:(NSRect)frame {
     if (self = [super initWithFrame:frame]) {
-        self.labelAttrs = [NSDictionary dictionaryWithObjectsAndKeys:
+        self.leafAttrs = [NSDictionary dictionaryWithObjectsAndKeys:
                            [NSFont boldSystemFontOfSize:10.0], NSFontAttributeName,
+                           [NSColor blackColor], NSForegroundColorAttributeName,
+                           nil];
+        self.parentAttrs = [NSDictionary dictionaryWithObjectsAndKeys:
+                           [NSFont fontWithName:@"Helvetica Neue Italic" size:11.0], NSFontAttributeName,
                            [NSColor blackColor], NSForegroundColorAttributeName,
                            nil];
     }
@@ -47,8 +56,9 @@
 
 
 - (void)dealloc {
-    self.parseTree = nil;
-    self.labelAttrs = nil;
+    self.root = nil;
+    self.leafAttrs = nil;
+    self.parentAttrs = nil;
     [super dealloc];
 }
 
@@ -59,25 +69,33 @@
 
 
 - (void)drawParseTree:(PKParseTree *)t {
-    self.parseTree = t;
+    self.root = t;
     
-    PKFloat w = [self widthForNode:parseTree] * CELL_WIDTH;
-    PKFloat h = [self depthForNode:parseTree] * ROW_HEIGHT + 120.0;
+    PKFloat w = [self widthForNode:_root] * CELL_WIDTH;
+    PKFloat h = [self depthForNode:_root] * ROW_HEIGHT + 120.0;
     
     NSSize minSize = [[self superview] bounds].size;
     w = w < minSize.width ? minSize.width : w;
     h = h < minSize.height ? minSize.height : h;
     [self setFrame:NSMakeRect(0.0, 0.0, w, h)];
     
+//    NSRect visRect = [self visibleRect];
+//    visRect.origin.x = w / 2.0 - visRect.size.width / 2.0;
+//    [self scrollRectToVisible:visRect];
+    
     [self setNeedsDisplay:YES];
 }
 
 
-- (void)drawRect:(NSRect)r {
-    [[NSColor whiteColor] set];
-    NSRectFill(r);
+- (void)drawRect:(NSRect)dirtyRect {
+    NSRect bounds = [self bounds];
     
-    [self drawTree:parseTree atPoint:NSMakePoint(r.size.width / 2.0, 20.0)];
+    [[NSColor whiteColor] set];
+    NSRectFill(dirtyRect);
+    
+    if (_root) {
+        [self drawTree:_root atPoint:NSMakePoint(bounds.size.width / 2.0, 20.0)];
+    }
 }
 
 
@@ -92,7 +110,7 @@
 
 - (void)drawParentNode:(PKParseTree *)n atPoint:(NSPoint)p {
     // draw own label
-    [self drawLabel:[self labelFromNode:n] atPoint:NSMakePoint(p.x, p.y)];
+    [self drawLabel:[self labelFromNode:n] atPoint:NSMakePoint(p.x, p.y) withAttrs:_parentAttrs];
 
     NSUInteger i = 0;
     NSUInteger c = [[n children] count];
@@ -109,7 +127,7 @@
     // draw children
     NSPoint points[c];
     if (1 == c) {
-        points[0] = NSMakePoint(p.x, p.y + ROW_HEIGHT);
+        points[0] = NSMakePoint((p.x), (p.y + ROW_HEIGHT));
         [self drawTree:[[n children] objectAtIndex:0] atPoint:points[0]];
     } else {
         PKFloat x = 0.0;
@@ -118,7 +136,7 @@
             x = p.x - (totalWidth / 2.0) + buff + (widths[i] / 2.0);
             buff += widths[i];
 
-            points[i] = NSMakePoint(x, p.y + ROW_HEIGHT);
+            points[i] = NSMakePoint((x), (p.y + ROW_HEIGHT));
             [self drawTree:[[n children] objectAtIndex:i] atPoint:points[i]];
         }
     }
@@ -128,8 +146,8 @@
     
     for (i = 0; i < c; i++) {
         CGContextBeginPath(ctx);
-        CGContextMoveToPoint(ctx, p.x, p.y + 15.0);
-        CGContextAddLineToPoint(ctx, points[i].x, points[i].y - 4.0);
+        CGContextMoveToPoint(ctx, PKAlign(p.x), PKAlign(p.y + 15.0));
+        CGContextAddLineToPoint(ctx, PKAlign(points[i].x), PKAlign(points[i].y - 4.0));
         CGContextClosePath(ctx);
         CGContextStrokePath(ctx);
     }
@@ -137,7 +155,7 @@
 
 
 - (void)drawLeafNode:(PKTokenNode *)n atPoint:(NSPoint)p {
-    [self drawLabel:[self labelFromNode:n] atPoint:NSMakePoint(p.x, p.y)];
+    [self drawLabel:[self labelFromNode:n] atPoint:NSMakePoint(p.x, p.y) withAttrs:_leafAttrs];
 }
 
 
@@ -171,8 +189,8 @@
 }
 
 
-- (void)drawLabel:(NSString *)label atPoint:(NSPoint)p {
-    NSSize labelSize = [label sizeWithAttributes:labelAttrs];
+- (void)drawLabel:(NSString *)label atPoint:(NSPoint)p withAttrs:(NSDictionary *)attrs {
+    NSSize labelSize = [label sizeWithAttributes:attrs];
     NSRect maxRect = NSMakeRect(p.x - CELL_WIDTH / 2.0, p.y, CELL_WIDTH, labelSize.height);
     
     if (!NSContainsRect(maxRect, NSMakeRect(maxRect.origin.x, maxRect.origin.y, labelSize.width, labelSize.height))) {
@@ -180,11 +198,9 @@
     }
     
     p.x -= labelSize.width / 2.0;
-    NSRect r = NSMakeRect(p.x, p.y, labelSize.width, labelSize.height);
+    NSRect r = NSMakeRect(p.x, p.y + LABEL_MARGIN_Y, labelSize.width, labelSize.height);
     NSUInteger opts = NSStringDrawingTruncatesLastVisibleLine|NSStringDrawingUsesLineFragmentOrigin;
-    [label drawWithRect:r options:opts attributes:labelAttrs];
+    [label drawWithRect:r options:opts attributes:attrs];
 }
 
-@synthesize parseTree;
-@synthesize labelAttrs;
 @end
